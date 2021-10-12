@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <header>
+      <h1>Form Page</h1>
+    </header>
+
+    <main>
+      <form action="">
+        <label for="UN">Username: </label>
+        <input
+          type="text"
+          name="Username"
+          id="UN"
+          required
+          placeholder="Enter name"
+        /><br /><br />
+
+        <label for="EM">Email: </label>
+        <input type="email" name="Email" id="EM" placeholder="Email" required />
+        <br /><br />
+
+        <label for="Ps">Password: </label>
+        <input
+          type="password"
+          name="password"
+          id="Ps"
+          placeholder="Password"
+          required
+          minlength="8"
+          maxlength="12"
+        />
+        <br /><br />
+
+        <label for="N">Even Number: </label>
+        <input
+          type="number"
+          name="number"
+          min="2"
+          max="10"
+          value="0"
+          step="2"
+          id="N"
+        />
+        <br /><br />
+
+        <label for="DT">DateTime: </label>
+        <input
+          type="datetime"
+          name="DateTime"
+          id="DT"
+          placeholder="Enter data & Time"
+        />
+        <br /><br />
+
+        <label for="D">Date: </label>
+        <input type="date" name="date" id="D" /> <br /><br />
+
+        <label>Male: </label>
+        <input type="radio" name="Gender" value="Male" />
+        <label>Female</label>
+        <input type="radio" name="Gender" value="Female" />
+        <label for="">Other</label>
+        <input type="radio" value="Other" name="Gender" /> <br /><br />
+
+        <label for="C">Pick your Fav Color !</label>
+        <input type="color" id="C" /> <br /><br />
+
+        <label for="Ra">Select your Blood Pressure !</label>
+        <input
+          type="range"
+          min="0"
+          max="100"
+          step="10"
+          value="20"
+          name="range"
+          id="Ra"
+        />
+        <br /><br />
+
+        <label for="Ag">Are you 18+ ?</label>
+        <input type="checkbox" id="Ag" /> <br /><br />
+
+        <label for="a">Age Group</label>
+        <select name="age" id="a">
+          <option value="">---Select your age---</option>
+          <option value="10+">14&plus;</option>
+          <option value="18+">18&plus;</option>
+          <option value="35+">35&plus;</option>
+        </select>
+        <br /><br />
+
+        <label for="Co">Comments</label> <br />
+        <textarea
+          name="Comments"
+          id="Co"
+          cols="40"
+          rows="10"
+          placeholder="Give Your Comments !!!"
+        ></textarea>
+        <br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; M Adnan Naeem</p>
+    </footer>
+  </body>
+</html>
