@@ -1,0 +1,23 @@
+h1 {
+  text-align: center;
+  color: lightseagreen;
+  letter-spacing: 5px;
+  /* text-decoration: grey underline wavy 2px; */
+  text-decoration: grey underline overline dotted 3px;
+}
+
+h2 {
+  background-color: lightslategray;
+  color: limegreen;
+  width: 170px;
+}
+
+main p {
+  color: mediumpurple;
+  line-height: 2;
+  font-size: 14pt;
+}
+footer {
+  color: orchid;
+  background-color: rgb(0, 200, 0);
+}
