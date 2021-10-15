@@ -204,7 +204,19 @@ console.log(userPosts); */
   
 // ? Decremental Loop
 
-for (let num = 25; num >= 0; num -= 5)
+/* for (let num = 25; num >= 0; num -= 5)
 {
   console.log(num);
+} */
+
+// ? Array Loop Exercise
+
+/* const people = ["Scooby", "Velma", "Daphne", "Shaggy", "Fred"];
+for (let i = 0; i <= people.length; i++){
+
+  console.log(people[i].toUpperCase());
 }
+ */
+
+// ? Nested Loops
+
