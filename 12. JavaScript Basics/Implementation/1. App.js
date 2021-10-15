@@ -171,10 +171,11 @@ console.log(fullAddress); */
 
 // ! Object Literals inside Arrays
 
-const userPosts = [
+/* const userPosts = [
   {username: `madnannaeem`, text:`nice`, votes: 9},
   {username: `arslannaeem`, text:`average`, votes: 6},
   {username: `mfahad`, text:`good`, votes: 7}
 ]
 
-console.log(userPosts);
+console.log(userPosts); */
+
