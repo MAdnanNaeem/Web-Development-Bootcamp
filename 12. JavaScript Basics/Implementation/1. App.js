@@ -179,3 +179,32 @@ console.log(fullAddress); */
 
 console.log(userPosts); */
 
+//! For Loops
+
+// ! Coding Exercise
+
+/* for (let i = 1; i <= 6; i++)
+{
+  console.log(`Da ba dee da ba daa`)
+} */
+
+//? Even Numbers
+
+/* for (let num = 2; num <= 21; num+=2)
+{
+  console.log(num);
+  } */
+
+  //? From 100 - 0
+  
+// for (let num = 100; num >= 0; num--)
+// {
+//   console.log(num);
+// }
+  
+// ? Decremental Loop
+
+for (let num = 25; num >= 0; num -= 5)
+{
+  console.log(num);
+}
