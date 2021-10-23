@@ -233,14 +233,14 @@ while (Party != guess)
 
   //! Task 2
 
-let show = prompt(`Enter Something !`);
-const mesg = `Stop Copying Me`;
-while (show) {
+// let show = prompt(`Enter Something !`);
+// const mesg = `Stop Copying Me`;
+// while (show) {
   
-  show = prompt(show);
-  if (show === mesg)
-  {
-    break;
-    }
-}
-console.log(`You Win !!`);
+//   show = prompt(show);
+//   if (show === mesg)
+//   {
+//     break;
+//     }
+// }
+// console.log(`You Win !!`);
