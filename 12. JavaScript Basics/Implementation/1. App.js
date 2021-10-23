@@ -218,5 +218,29 @@ for (let i = 0; i <= people.length; i++){
 }
  */
 
-// ? Nested Loops
+// ? While LoopsTLP
 
+// ! Task 1
+/* const Party = `TLP`;
+let guess = prompt(`Enter the Real Party Name : `);
+while (Party != guess)
+{
+  guess = prompt(`Guess Again :`)
+         
+}
+  console.log(`You have Guessed ${guess}`);
+ */ 
+
+  //! Task 2
+
+let show = prompt(`Enter Something !`);
+const mesg = `Stop Copying Me`;
+while (show) {
+  
+  show = prompt(show);
+  if (show === mesg)
+  {
+    break;
+    }
+}
+console.log(`You Win !!`);
