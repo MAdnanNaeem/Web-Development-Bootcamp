@@ -1,0 +1,44 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 6em;
+  text-align: center;
+}
+nav {
+  font-size: 1.5em;
+}
+
+ul,
+li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+/* When the viewport will larger than 800px */
+@media (min-width: 800px) {
+  h1 {
+    color: violet;
+  }
+}
+
+/* When the viewport will smaller than 800px */
+@media (max-width: 600px) {
+  h1 {
+    color: turquoise;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  h1 {
+    color: brown;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    background-color: silver;
+  }
+}

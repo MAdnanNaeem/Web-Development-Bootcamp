@@ -1,0 +1,91 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+#container {
+  background-color: #003049;
+  width: 90%;
+  /* Commenting this for Flex-sizing Properties */
+  /* height: 500px; */
+  margin: 0 auto;
+  border: 5px solid #003049;
+
+  display: flex;
+
+  /* Flex-direction Property */
+  flex-direction: row;
+  /* justify-content */
+  justify-content: center;
+
+  /* Flex-wrap */
+  /* flex-wrap: wrap; off-due to flex-shrink property*/
+
+  /* align-items */
+  align-items: flex-start;
+
+  /* Align-content */
+  align-content: flex-start;
+}
+
+#container div {
+  width: 12.5rem;
+  height: 12.5rem;
+  text-align: center;
+  flex-basis: 20.5rem;
+  /* min-width: 12.5rem; */
+
+  /* to give min & max width to the elements */
+  /* min-width: 12.6rem;
+  max-width: 18.75rem; */
+
+  /* all elements of flex container got space of 1 */
+  /* flex-grow: 1; */
+}
+
+/* Align-self */
+
+/* div:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+div:nth-of-type(3) {
+  align-self: flex-end;
+} */
+
+/*  flex-sizing Properties */
+
+div:nth-of-type(1) {
+  flex-grow: 1;
+  flex-shrink: 3;
+}
+
+div:nth-of-type(5) {
+  /* double the size of 1st item */
+  flex-grow: 2;
+  /* It will not shrink at all */
+  flex-shrink: 0;
+}
+
+/* 2nd Example code */
+
+main {
+  width: 80%;
+  margin: 0px auto;
+  border: black 5px solid;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+
+main .sidebar {
+  background-color: #6930c3;
+  border: 2px solid white;
+  flex: 1 2 300px;
+}
+
+main .maincontent {
+  background-color: #80ffdb;
+  flex: 2 1 800px;
+}
