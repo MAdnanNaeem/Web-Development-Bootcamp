@@ -150,3 +150,28 @@ footer {
   display: block;
   margin-top: 1rem;
 }
+
+.watch {
+  display: flex;
+  flex-direction: row;
+  display: inline-flex;
+  margin-left: 80rem;
+}
+
+/* #date {
+  font-size: 1.6rem;
+  padding: 2rem;
+  color: #f7f7f9;
+  margin-left: 80rem;
+  text-align: center;
+  background-color: lightsalmon;
+}
+
+#time {
+  padding: 2rem;
+  font-size: 2rem;
+  color: #f7f7f9;
+  margin-left: 99.8rem;
+  text-align: center;
+  background-color: lightsalmon;
+} */

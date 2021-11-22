@@ -52,8 +52,29 @@
 
       <main>
         <section class="topSection">
-          <h1>Dashboard</h1>
+          <h1>
+            Dashboard
+            <div class="watch" style="text-align: center">
+              <h4>
+                <a
+                  style="text-decoration: none"
+                  href="https://www.zeitverschiebung.net/en/country/pk"
+                ></a>
+              </h4>
+              <iframe
+                src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Asia%2FKarachi&show=hour_minute"
+                width="100%"
+                height="90"
+                frameborder="0"
+                seamless
+              ></iframe>
+            </div>
+            <!-- <span id="date"></span> <br />
+            <span id="time"></span> -->
+          </h1>
+
           <h2>Student Registration</h2>
+
           <hr />
         </section>
 
@@ -381,7 +402,9 @@
         <span id="show_presch"></span><br />
         <span id="show_nat"></span><br />
         <span id="show_religion"></span>
-        <button class="btnPrint" type="submit">Print</button>
+        <button class="btnPrint" type="submit" onclick="dialogClose()">
+          Print
+        </button>
       </div>
     </div>
     <footer><small class="signature">&copy; M ADNAN NAEEM</small></footer>
@@ -397,6 +420,12 @@
       function enable() {
         document.getElementById("Save").removeAttribute("disabled");
         document.getElementById("regId").removeAttribute("disabled");
+      }
+
+      function dialogClose() {
+        var dia = document.getElementById("dialog");
+        $("#dialog").dialog("close");
+        window.print();
       }
 
       $(function () {
@@ -430,7 +459,6 @@
           var Nationality = $("#nat").val();
           var religion = $("#religion").val(); //a
 
-          document.getElementById("dob").style.fontSize = "x-large";
           $("#show_fname").html(fname);
           $("#show_mname").html(mname);
           $("#show_lname").html(lname);
@@ -459,6 +487,25 @@
           }, 3000);
         });
       });
+
+      // var d = new Date();
+      // document.getElementById("dateTime").innerHTML = d.toLocaleDateString();
+      // document.write("<br>");
+      // document.getElementById("dateTime").innerHTML = d.toLocaleDateString();
+
+      2;
+      var today = new Date();
+      var date =
+        today.getDate() +
+        " " +
+        (today.getMonth() + 1) +
+        " " +
+        today.getFullYear();
+      document.getElementById("date").innerHTML = date;
+
+      var time =
+        today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+      document.getElementById("time").innerHTML = time;
     </script>
   </body>
 </html>
