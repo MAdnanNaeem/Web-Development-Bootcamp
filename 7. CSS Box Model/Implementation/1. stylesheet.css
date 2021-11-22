@@ -1,0 +1,51 @@
+article {
+  font-size: 15px;
+}
+
+/* It has the twice the size of the article's font-size   */
+h2 {
+  font-size: 2em;
+  margin-left: 1em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 0.8em;
+}
+
+button {
+  font-size: 1em;
+  padding: 0 1em;
+  border-radius: 0.5em;
+  color: white;
+  background-color: #2a9d8f;
+}
+
+ul {
+  font-size: 1.5rem;
+}
+
+/* REM'S Style Sheet */
+
+html {
+  font-size: 30px;
+}
+
+#rem h2 {
+  font-size: 3rem;
+}
+
+#rem h3 {
+  font-size: 2rem;
+}
+
+#rem ul {
+  font-size: 0.8rem;
+}
+
+#rem button {
+  font-size: 1.5rem;
+}
