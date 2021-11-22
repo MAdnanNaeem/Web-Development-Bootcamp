@@ -1,19 +1,20 @@
 html {
   font-size: 10px;
+  font-family: monospace;
 }
 * {
   box-sizing: border-box;
 }
 main {
-  background-color: gainsboro;
+  background-color: #f7f7f9;
 }
 .parentContainer {
   display: flex;
   flex-direction: row;
-  background-color: gainsboro;
+  background-color: #f7f7f9;
 }
 nav {
-  width: 30rem;
+  width: 40rem;
 }
 .navSec {
   background-color: #f7f7f9;
@@ -55,16 +56,42 @@ h1 {
   font-size: 2rem;
 }
 
+.formSection {
+  margin-top: 3rem;
+}
+
 .labels {
   padding: 0.5rem;
   padding-right: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-align: right;
   float: left;
-  width: 15rem;
+  width: 20rem;
 }
+
+#dialog {
+  display: flex;
+  flex-direction: row;
+}
+
+.labels2 {
+  font-family: monospace;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  text-align: right;
+  color: cornflowerblue;
+}
+
+.spans1 {
+  font-size: 2rem;
+  line-height: 3.2rem;
+  margin-left: 3rem;
+  font-family: monospace;
+  color: indigo;
+}
+
 .inputs {
   padding: 0.5rem;
   margin-top: 0.5rem;
@@ -72,12 +99,11 @@ h1 {
   width: 50%;
 }
 .form1 {
-  width: 50rem;
+  width: 55rem;
   float: left;
 }
 .form2 {
-  width: 50rem;
-  height: max-content;
+  width: 55rem;
   float: left;
 }
 
@@ -85,8 +111,9 @@ h1 {
   color: red;
 }
 .checkbox {
-  font-size: 1.2rem;
-  margin-left: 16rem;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-left: 19rem;
 }
 button[type="submit"] {
   margin-left: 13rem;
@@ -97,17 +124,29 @@ button[type="button"] {
   margin-left: 1rem;
 }
 .btn {
+  margin-left: 5.5rem;
   margin-top: 2.5rem;
   float: left;
 }
 button {
+  margin-top: 3rem;
   background-color: deepskyblue;
   color: white;
   font-weight: bold;
   padding: 1rem;
 }
+
 footer {
-  background-color: #f7f7f9;
-  height: 32rem;
-  padding: 2rem;
+  margin-top: 3rem;
+}
+.signature {
+  padding-top: 3rem;
+  color: cadetblue;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.btnPrint {
+  display: block;
+  margin-top: 1rem;
 }
