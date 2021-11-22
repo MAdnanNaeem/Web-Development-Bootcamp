@@ -1,0 +1,35 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: magenta;
+  margin: 10px 0;
+  /* transition: background-color 1s 2s; */
+  /* transition: background-color 1s 5s, border-radius 3s 6s; */
+  transition: margin-left 3s;
+}
+
+/* .d1:hover {
+border-radius: 50%;
+  background-color: cyan;
+} */
+
+/* New Work here for Transition */
+
+section:hover div {
+  margin-left: 500px;
+}
+.d1:nth-of-type(1) {
+  transition-timing-function: ease-in;
+}
+
+.d2:nth-of-type(2) {
+  transition-timing-function: ease-out;
+}
+
+.d3:nth-of-type(3) {
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.d4:nth-of-type(4) {
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}

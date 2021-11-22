@@ -1,0 +1,65 @@
+h1 {
+  text-align: center;
+}
+
+h2 {
+  width: 300px;
+  height: 50px;
+  margin: 20px auto;
+  border: 5px #2a9d8f solid;
+  padding: 0.7em;
+  background-color: #264653;
+  text-align: center;
+  color: white;
+  font-family: "Courier New";
+  font-weight: lighter;
+}
+
+h2:nth-of-type(2n) {
+  background-color: #e9c46a;
+}
+
+h2:nth-of-type(3n) {
+  background-color: #f4a261;
+}
+
+h2:nth-of-type(4n) {
+  background-color: #e76f51;
+}
+
+section:first-of-type h2:nth-of-type(1) {
+  /* transform-origin: top bottom; */
+  transform: rotate(45deg);
+}
+
+section:first-of-type h2:nth-of-type(2) {
+  /* transform: scale(1.5, 1); */
+  transform: scaley(0.6);
+}
+section:first-of-type h2:nth-of-type(3) {
+  transform: translateX(200px);
+}
+
+section:first-of-type h2:nth-of-type(4) {
+  transform: translate(-200px, 50px);
+}
+
+section:last-of-type h2:nth-of-type(1) {
+  transform: skew(30deg);
+}
+
+section:last-of-type h2:nth-of-type(2) {
+  transform: skew(10deg, 0.04turn);
+}
+
+section:last-of-type h2:nth-of-type(3) {
+  transform: rotate(-20deg) scale(0.8);
+}
+
+section:last-of-type h2:nth-of-type(4) {
+  transform: translateX(-500px) rotate(0.5turn) scaleY(1.3);
+}
+
+section:last-of-type {
+  transform: scale(0.7) translateX(500px);
+}
