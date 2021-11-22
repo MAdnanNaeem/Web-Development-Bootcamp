@@ -16,6 +16,7 @@ main {
 nav {
   width: 40rem;
 }
+
 .navSec {
   background-color: #f7f7f9;
 }
@@ -98,6 +99,7 @@ h1 {
   margin-bottom: 0.5rem;
   width: 50%;
 }
+
 .form1 {
   width: 55rem;
   float: left;
@@ -115,6 +117,7 @@ h1 {
   margin-top: 3rem;
   margin-left: 19rem;
 }
+
 button[type="submit"] {
   margin-left: 13rem;
   margin-right: 1rem;
@@ -148,6 +151,7 @@ footer {
 
 .btnPrint {
   display: block;
+  margin-left: 0;
   margin-top: 1rem;
 }
 
@@ -175,3 +179,55 @@ footer {
   text-align: center;
   background-color: lightsalmon;
 } */
+
+@media (max-width: 1480px) {
+  .watch {
+    margin-left: 40rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .watch {
+    margin-left: 0;
+  }
+
+  nav {
+    width: 20rem;
+  }
+  nav li {
+    padding-left: 0;
+  }
+  nav a {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  nav h2 {
+    margin-left: 0;
+    font-size: 2rem;
+  }
+  .labels {
+    font-size: 1.3rem;
+  }
+
+  .inputs {
+    width: 40%;
+  }
+  .btn {
+    margin-left: 3rem;
+  }
+  .checkbox {
+    font-size: 1rem;
+    margin-left: 20rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  button {
+    margin-top: 0;
+    margin-left: 2rem;
+    padding: 0.5rem;
+  }
+
+  footer {
+    margin-left: 50%;
+  }
+}

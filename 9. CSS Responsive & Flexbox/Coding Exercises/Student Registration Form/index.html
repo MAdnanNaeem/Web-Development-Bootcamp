@@ -411,7 +411,7 @@
 
     <script>
       function disable() {
-        if (document.getElementById("Save" != null)) {
+        if (document.getElementById("regId").value.length != 0) {
           document.getElementById("Save").setAttribute("disabled", "disabled");
           document.getElementById("regId").setAttribute("disabled", "disabled");
         }
@@ -434,7 +434,7 @@
           autoOpen: false,
           title: "Student Details",
           width: 600,
-          height: 700,
+          height: 750,
         });
         $("#showdata").click(function (e) {
           e.preventDefault();
@@ -493,7 +493,6 @@
       // document.write("<br>");
       // document.getElementById("dateTime").innerHTML = d.toLocaleDateString();
 
-      2;
       var today = new Date();
       var date =
         today.getDate() +
