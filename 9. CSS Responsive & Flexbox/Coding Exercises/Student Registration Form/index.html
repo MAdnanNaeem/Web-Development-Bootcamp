@@ -4,240 +4,301 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="stylesheet.css" />
+    <!-- <link rel="stylesheet" href="stylesheet.css" /> -->
+    <link rel="stylesheet" href="styles.css" />
     <title>Assignment 1</title>
   </head>
   <body>
-    <nav>
-      <h2>Students</h2>
-      <li><a href="admissionSearch.html">Admission Search</a></li>
-      <li><a href="index.html">Registration</a></li>
-      <li><a href="searchRegistration.html">Search Registration</a></li>
-      <li><a href="basicRegistartion.html">Basic Information</a></li>
-      <li><a href="fine.html">Fine</a></li>
-      <li><a href="quickView.html">Quick View</a></li>
-      <li><a href="transfer.html">Withdrawal / Transfer</a></li>
-      <li><a href="concessionList.html">Concession List</a></li>
-    </nav>
-    <main>
-      <h1>Dashboard</h1>
-      <h2>Student Registration</h2>
-      <hr />
+    <section class="parentContainer">
+      <section class="navSec">
+        <nav>
+          <h2>Students</h2>
+          <li><a href="admissionSearch.html">Admission Search</a></li>
+          <li><a href="index.html">Registration</a></li>
+          <li><a href="searchRegistration.html">Search Registration</a></li>
+          <li><a href="basicRegistartion.html">Basic Information</a></li>
+          <li><a href="fine.html">Fine</a></li>
+          <li><a href="quickView.html">Quick View</a></li>
+          <li><a href="transfer.html">Withdrawal</a></li>
+          <li><a href="concessionList.html">Concession List</a></li>
+        </nav>
+      </section>
 
-      <form action="">
-        <div class="form1">
-          <label class="labels" for="campus">Campus</label>
-          <select class="inputs" name="School" id="campus">
-            <option value="">Arham School System</option>
-            <option value="">Hazara School System</option>
-            <option value="">Educator School System</option>
-            <option value="">Allied School System</option>
-            <option value="">Punjab School System</option>
-            <option value="">Bechon house School System</option>
-            <option value="">Govt School System</option>
-            <option value="">Aspire School System</option>
-            <option value="">Superior School System</option>
-            <option value="">Concordia School System</option>
-          </select>
-          <br />
+      <main>
+        <section class="topSection">
+          <h1>Dashboard</h1>
+          <h2>Student Registration</h2>
+          <hr />
+        </section>
 
-          <label class="labels" for="Regdate"
-            >Registration Date <span id="ast">&ast;</span></label
-          >
-          <input
-            class="inputs"
-            type="date"
-            name="date"
-            id="Regdate"
-            value="2021-11-17"
-            required
-          />
-          <br />
+        <section class="formSection">
+          <form action="">
+            <div class="form1">
+              <label class="labels" for="campus">Campus</label>
+              <select class="inputs" name="School" id="campus">
+                <option value="">Arham School System</option>
+                <option value="">Hazara School System</option>
+                <option value="">Educator School System</option>
+                <option value="">Allied School System</option>
+                <option value="">Punjab School System</option>
+                <option value="">Bechon house School System</option>
+                <option value="">Govt School System</option>
+                <option value="">Aspire School System</option>
+                <option value="">Superior School System</option>
+                <option value="">Concordia School System</option>
+              </select>
+              <br />
 
-          <label class="labels" for="regId">Registration ID</label>
-          <input
-            class="inputs"
-            type="number"
-            name="RegistrationID"
-            id="regId"
-          />
-          <br />
+              <label class="labels" for="Regdate"
+                >Registration Date <span id="ast">&ast;</span></label
+              >
+              <input
+                class="inputs"
+                type="date"
+                name="date"
+                id="Regdate"
+                value="2021-11-17"
+                required
+              />
+              <br />
 
-          <label class="labels" for="fname"
-            >First Name <span id="ast">&ast;</span></label
-          >
-          <input
-            class="inputs"
-            id="fname"
-            type="text"
-            name="firstName"
-            required
-          /><br />
+              <label class="labels" for="regId">Registration ID</label>
+              <input
+                class="inputs"
+                type="number"
+                name="RegistrationID"
+                id="regId"
+              />
+              <br />
 
-          <label class="labels" for="mname">Middle Name</label>
-          <input
-            class="inputs"
-            id="mname"
-            type="text"
-            name="middleName"
-          /><br />
+              <label class="labels" for="fname"
+                >First Name <span id="ast">&ast;</span></label
+              >
+              <input
+                class="inputs"
+                id="fname"
+                type="text"
+                name="firstName"
+                required
+              /><br />
 
-          <label class="labels" for="lname"
-            >Last Name <span id="ast">&ast;</span></label
-          >
-          <input
-            class="inputs"
-            id="lname"
-            type="text"
-            name="lastName"
-            required
-          /><br />
+              <label class="labels" for="mname">Middle Name</label>
+              <input
+                class="inputs"
+                id="mname"
+                type="text"
+                name="middleName"
+              /><br />
 
-          <label class="labels" for=""
-            >Father Name <span id="ast">&ast;</span></label
-          >
-          <input class="inputs" type="text" name="fatherName" required /><br />
+              <label class="labels" for="lname"
+                >Last Name <span id="ast">&ast;</span></label
+              >
+              <input
+                class="inputs"
+                id="lname"
+                type="text"
+                name="lastName"
+                required
+              /><br />
 
-          <label class="labels" for=""
-            >Date of Birth <span id="ast">&ast;</span></label
-          >
-          <input
-            class="inputs"
-            type="date"
-            value="1999-03-01"
-            name="DoB"
-            required
-          /><br />
+              <label class="labels" for=""
+                >Father Name <span id="ast">&ast;</span></label
+              >
+              <input
+                class="inputs"
+                type="text"
+                name="fatherName"
+                required
+              /><br />
 
-          <label class="labels" for="">Place of Birth</label>
-          <input class="inputs" type="text" name="placeOfBirth" /><br />
+              <label class="labels" for=""
+                >Date of Birth <span id="ast">&ast;</span></label
+              >
+              <input
+                class="inputs"
+                type="date"
+                value="1999-03-01"
+                name="DoB"
+                required
+              /><br />
 
-          <label class="labels" for="address"
-            >Address <span id="ast">&ast;</span></label
-          >
-          <textarea
-            class="inputs"
-            id="address"
-            name="address"
-            rows="3"
-            required
-          ></textarea>
-          <br />
+              <label class="labels" for="">Place of Birth</label>
+              <input class="inputs" type="text" name="placeOfBirth" /><br />
 
-          <div class="checkbox">
-            <input id="a" type="checkbox" value="active" name="status" />
-            <label for="a">Active</label>
+              <label class="labels" for="address"
+                >Address <span id="ast">&ast;</span></label
+              >
+              <textarea
+                class="inputs"
+                id="address"
+                name="address"
+                rows="3"
+                required
+              ></textarea>
+              <br />
 
-            <input id="b" type="checkbox" name="status" value="admitted" />
-            <label for="b">Admitted</label>
+              <div class="checkbox">
+                <input id="a" type="checkbox" value="active" name="status" />
+                <label for="a">Active</label>
 
-            <input id="c" type="checkbox" name="status" value="transfer" />
-            <label for="c">Transfer</label>
-          </div>
-        </div>
+                <input id="b" type="checkbox" name="status" value="admitted" />
+                <label for="b">Admitted</label>
 
-        <div class="form2">
-          <label class="labels" for="resNo"
-            >Residence Number <span id="ast">&ast;</span></label
-          >
-          <input
-            class="inputs"
-            type="number"
-            name="residanceNo"
-            id="resNo"
-            required
-          />
+                <input id="c" type="checkbox" name="status" value="transfer" />
+                <label for="c">Transfer</label>
+              </div>
+            </div>
 
-          <label class="labels" for="phno"
-            >Mobile Number <span id="ast">&ast;</span></label
-          >
-          <input class="inputs" type="number" name="Ph" id="phno" required />
+            <div class="form2">
+              <label class="labels" for="resNo"
+                >Residence Number <span id="ast">&ast;</span></label
+              >
+              <input
+                class="inputs"
+                type="number"
+                name="residanceNo"
+                id="resNo"
+                required
+              />
 
-          <label class="labels" for="emerg"
-            >Emergency No <span id="ast">&ast;</span></label
-          >
-          <input
-            class="inputs"
-            type="number"
-            name="emergencyNo"
-            id="emerg"
-            required
-          />
+              <label class="labels" for="phno"
+                >Mobile Number <span id="ast">&ast;</span></label
+              >
+              <input
+                class="inputs"
+                type="number"
+                name="Ph"
+                id="phno"
+                required
+              />
 
-          <label class="labels" for="email"
-            >Email <span id="ast">&ast;</span></label
-          >
-          <input class="inputs" type="email" name="email" id="email" required />
+              <label class="labels" for="emerg"
+                >Emergency No <span id="ast">&ast;</span></label
+              >
+              <input
+                class="inputs"
+                type="number"
+                name="emergencyNo"
+                id="emerg"
+                required
+              />
 
-          <label class="labels" for="prevSchool">Previous School</label>
-          <input class="inputs" type="text" name="prevSchool" id="prevSchool" />
-          <br />
+              <label class="labels" for="email"
+                >Email <span id="ast">&ast;</span></label
+              >
+              <input
+                class="inputs"
+                type="email"
+                name="email"
+                id="email"
+                required
+              />
 
-          <label class="labels" for="nat">Nationality</label>
-          <select class="inputs" name="Nationality" id="nat">
-            <option value="Pakistani">Pakistani</option>
-            <option value="Qatari">Qatari</option>
-            <option value="American">American</option>
-            <option value="Austrailan">Austrailan</option>
-            <option value="Srilankan">Srilankan</option>
-          </select>
-          <br />
+              <label class="labels" for="prevSchool">Previous School</label>
+              <input
+                class="inputs"
+                type="text"
+                name="prevSchool"
+                id="prevSchool"
+              />
+              <br />
 
-          <label class="labels" for="religion">Religion</label>
-          <select class="inputs" name="religion" id="religion">
-            <option value="Islam">Islam</option>
-            <option value="Sikh">Sikh</option>
-            <option value="Hindu">Hindu</option>
-            <option value="Budhmat">Budhmat</option>
-            <option value="Jewish">Jewish</option>
-          </select>
-          <br />
+              <label class="labels" for="nat">Nationality</label>
+              <select class="inputs" name="Nationality" id="nat">
+                <option value="Pakistani">Pakistani</option>
+                <option value="Qatari">Qatari</option>
+                <option value="American">American</option>
+                <option value="Austrailan">Austrailan</option>
+                <option value="Srilankan">Srilankan</option>
+              </select>
+              <br />
 
-          <label class="labels" for="gender"
-            >Gender <span id="ast">&ast;</span></label
-          >
-          <select class="inputs" name="gender" id="gender" required>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-            <option value="Other">Other</option>
-          </select>
-          <br />
+              <label class="labels" for="religion">Religion</label>
+              <select class="inputs" name="religion" id="religion">
+                <option value="Islam">Islam</option>
+                <option value="Sikh">Sikh</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Budhmat">Budhmat</option>
+                <option value="Jewish">Jewish</option>
+              </select>
+              <br />
 
-          <label class="labels" for="admission"
-            >Admission in Session <span id="ast">&ast;</span></label
-          >
-          <select class="inputs" name="admission" id="admission" required>
-            <option value="Spring 2014-2015">Spring 2014-2015</option>
-            <option value="Fall 2014-2015">Fall 2014-2015</option>
-            <option value="Summer 2015-2016">Summer 2015-2016</option>
-          </select>
-          <br />
+              <label class="labels" for="gender"
+                >Gender <span id="ast">&ast;</span></label
+              >
+              <select class="inputs" name="gender" id="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+              <br />
 
-          <label class="labels" for="admissionClass"
-            >Admission in Class <span id="ast">&ast;</span></label
-          >
-          <select
-            class="inputs"
-            name="admissionClass"
-            id="admissionClass"
-            required
-          >
-            <option value="Play Group">Play Group</option>
-            <option value="Nursery">Nursery</option>
-            <option value="KG">KG</option>
-            <option value="1-5">1-5</option>
-            <option value="6-8">6-8</option>
-            <option value="9-10">9-10</option>
-          </select>
-          <br />
-          <div class="btn">
-            <button type="submit">Save</button>
-            <button type="reset">Reset</button>
-            <button type="button">Registration Receipt</button>
-          </div>
-        </div>
-      </form>
-    </main>
+              <label class="labels" for="admission"
+                >Admission in Session <span id="ast">&ast;</span></label
+              >
+              <select class="inputs" name="admission" id="admission" required>
+                <option value="Spring 2014-2015">Spring 2014-2015</option>
+                <option value="Fall 2014-2015">Fall 2014-2015</option>
+                <option value="Summer 2015-2016">Summer 2015-2016</option>
+              </select>
+              <br />
+
+              <label class="labels" for="admissionClass"
+                >Admission in Class <span id="ast">&ast;</span></label
+              >
+              <select
+                class="inputs"
+                name="admissionClass"
+                id="admissionClass"
+                required
+              >
+                <option value="Play Group">Play Group</option>
+                <option value="Nursery">Nursery</option>
+                <option value="KG">KG</option>
+                <option value="1-5">1-5</option>
+                <option value="6-8">6-8</option>
+                <option value="9-10">9-10</option>
+              </select>
+              <br />
+
+              <div class="btn">
+                <button
+                  accesskey="S"
+                  id="Save"
+                  type="submit"
+                  onclick="disable()"
+                >
+                  Save
+                </button>
+                <button
+                  accesskey="R"
+                  id="reset"
+                  type="reset"
+                  onclick="enable()"
+                >
+                  Reset
+                </button>
+                <button type="button">Registration Receipt</button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </main>
+    </section>
     <footer></footer>
+
+    <script>
+      function disable() {
+        if (document.getElementById("Save" != null)) {
+          document.getElementById("Save").setAttribute("disabled", "disabled");
+          document.getElementById("regId").setAttribute("disabled", "disabled");
+        }
+      }
+
+      function enable() {
+        document.getElementById("Save").removeAttribute("disabled");
+        document.getElementById("regId").removeAttribute("disabled");
+      }
+    </script>
   </body>
 </html>

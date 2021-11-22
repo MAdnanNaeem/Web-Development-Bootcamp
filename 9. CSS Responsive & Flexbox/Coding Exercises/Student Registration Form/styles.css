@@ -1,14 +1,22 @@
 html {
   font-size: 10px;
 }
-
-body {
-  display: flex;
-  flex-direction: row;
-}
-
 * {
   box-sizing: border-box;
+}
+main {
+  background-color: gainsboro;
+}
+.parentContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: gainsboro;
+}
+nav {
+  width: 30rem;
+}
+.navSec {
+  background-color: #f7f7f9;
 }
 
 nav li {
@@ -23,10 +31,6 @@ nav h2 {
   font-size: 3rem;
   color: gray;
 }
-nav {
-  width: 20%;
-  background-color: #f7f7f9;
-}
 
 nav a {
   text-decoration: none;
@@ -40,24 +44,15 @@ nav li:hover {
   background-color: darkgray;
 }
 
-main {
-  background-color: gainsboro;
-}
 h1 {
   font-size: 4rem;
   margin-top: 0rem;
   margin-left: 2rem;
 }
 
-form {
-  padding: 1rem;
-}
-
-.inputs {
-  padding: 0.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  width: 50%;
+.topSection h2 {
+  padding-left: 3rem;
+  font-size: 2rem;
 }
 
 .labels {
@@ -70,12 +65,12 @@ form {
   float: left;
   width: 15rem;
 }
-
-.checkbox {
-  font-size: 1.2rem;
-  margin-left: 16rem;
+.inputs {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 50%;
 }
-
 .form1 {
   width: 50rem;
   float: left;
@@ -89,7 +84,10 @@ form {
 #ast {
   color: red;
 }
-
+.checkbox {
+  font-size: 1.2rem;
+  margin-left: 16rem;
+}
 button[type="submit"] {
   margin-left: 13rem;
   margin-right: 1rem;
@@ -107,4 +105,9 @@ button {
   color: white;
   font-weight: bold;
   padding: 1rem;
+}
+footer {
+  background-color: #f7f7f9;
+  height: 32rem;
+  padding: 2rem;
 }
