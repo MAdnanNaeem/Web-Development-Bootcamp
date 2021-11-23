@@ -131,6 +131,8 @@
                 type="number"
                 name="RegistrationID"
                 id="regId"
+                max="9999999"
+                min="0"
               />
               <br />
 
@@ -142,8 +144,9 @@
                 id="fname"
                 type="text"
                 name="firstName"
-                required
-              /><br />
+                onkeypress=" return alphaOnly(event);"
+              />
+              required /><br />
 
               <label class="labels" for="mname">Middle Name</label>
               <input
@@ -151,6 +154,7 @@
                 id="mname"
                 type="text"
                 name="middleName"
+                onkeypress=" return alphaOnly(event );"
               /><br />
 
               <label class="labels" for="lname"
@@ -161,6 +165,7 @@
                 id="lname"
                 type="text"
                 name="lastName"
+                onkeypress=" return alphaOnly(event );"
                 required
               /><br />
 
@@ -172,6 +177,7 @@
                 id="ftname"
                 type="text"
                 name="fatherName"
+                onkeypress=" return alphaOnly(event );"
                 required
               /><br />
 
@@ -228,6 +234,8 @@
                 type="number"
                 name="residanceNo"
                 id="resNo"
+                min="0"
+                max="9999999"
                 required
               />
 
@@ -239,6 +247,8 @@
                 type="number"
                 name="Ph"
                 id="phno"
+                min="0"
+                max="13"
                 required
               />
 
@@ -250,6 +260,8 @@
                 type="number"
                 name="emergencyNo"
                 id="emerg"
+                min="0"
+                max="9999"
                 required
               />
 
@@ -270,6 +282,7 @@
                 type="text"
                 name="prevSchool"
                 id="prevSchool"
+                onkeypress=" return alphaOnly(event );"
               />
               <br />
 
@@ -492,6 +505,13 @@
       // document.getElementById("dateTime").innerHTML = d.toLocaleDateString();
       // document.write("<br>");
       // document.getElementById("dateTime").innerHTML = d.toLocaleDateString();
+      function alphaOnly(event) {
+        return (
+          (event.charCode >= 65 && event.charCode <= 90) ||
+          (event.charCode >= 97 && event.charCode <= 122) ||
+          event.charCode == 32
+        );
+      }
 
       var today = new Date();
       var date =
