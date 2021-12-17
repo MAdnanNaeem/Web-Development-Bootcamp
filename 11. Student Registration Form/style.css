@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.main-header {
+  background-color: royalblue;
+  height: 75px;
+  position: relative;
+}
+.primary-heading {
+  color: #fff;
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
