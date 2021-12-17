@@ -1,82 +1,188 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  font-family: sans-serif;
+    font-family: sans-serif;
 }
 
 .main-header {
-  background-color: royalblue;
-  height: 75px;
-  position: relative;
+    background-color: royalblue;
+    height: 75px;
+    position: relative;
 }
+
 .primary-heading {
-  color: #fff;
-  position: absolute;
-  top: 8px;
-  left: 50%;
-  transform: translate(-50%);
-  text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
 }
 
 .date-bar {
-  position: relative;
-  background-color: peachpuff;
-  height: 30px;
+    position: relative;
+    background-color: peachpuff;
+    height: 30px;
 }
 
 .date-components {
-  position: absolute;
-  left: 58%;
+    position: absolute;
+    left: 80%;
 }
 
 .date-label {
-  position: absolute;
-  top: 7px;
-  font-size: 12pt;
-  font-weight: 400;
+    position: absolute;
+    top: 7px;
+    font-size: 12pt;
+    font-weight: 400;
 }
 
 .date-picker {
-  margin-left: 53px;
-  margin-top: 6px;
+    margin-left: 53px;
+    margin-top: 2.5px;
+}
+
+
+/* ? Main Section */
+
+.person-data-section {
+    display: flex;
+    flex-direction: column;
 }
 
 .person-section-heading {
-  background-color: #fff;
-  color: #000;
-  height: 30px;
-  text-align: center;
-  padding-top: 5px;
-  font-size: 14pt;
-  background-color: plum;
+    background-color: #fff;
+    color: #000;
+    height: 40px;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 14pt;
+    background-color: plum;
 }
 
-.row-1 {
-  position: relative;
-  height: 50px;
-  border: #000 2px solid;
+
+/* ? Row-1 of Main Section */
+
+.row-1,
+.row-2,
+.row-3 {
+    display: flex;
+    height: 50px;
+    border: #000 2px solid;
 }
 
-.urdu-name-sec {
-  position: absolute;
-  height: 50px;
-  border-right: solid black 1px;
+.u-n-lbl,
+.e-n-lbl,
+.sex-main-lbl,
+.b-t-lbl,
+.b-t-lbl,
+.dob-lbl,
+.height-lbl,
+.id-lbl,
+.weight-lbl {
+    font-size: 13pt;
+    padding: 0 30px;
+    border-right: solid black 1px;
 }
 
-.u-n-label {
-  font-size: 13pt;
-  padding: 0 15px;
-  border-right: solid black 1px;
+.sex-main-lbl {
+    padding-left: 50px;
 }
 
-.u-n-field {
-  margin-top: 8px;
-  margin-left: 10px;
-  padding: 5px 0;
-  border: none;
-  margin-right: 10px;
+.sex-m-lbl {
+    margin-left: 25px;
+}
+
+.sex-m-lbl,
+.sex-f-lbl {
+    border: none;
+    padding: 0 10px;
+}
+
+.b-t-lbl {
+    padding-left: 50px;
+    text-align: left;
+}
+
+.dob-lbl {
+    padding-left: 59px;
+}
+
+.id-lbl {
+    padding-left: 10px;
+}
+
+.weight-lbl {
+    padding-left: 27px;
+}
+
+.u-n-field,
+.e-n-field,
+.b-t-field,
+.dob-field,
+.height-field,
+.id-field,
+.weight-field {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px 0;
+    border: none;
+    margin-right: 10px;
+}
+
+.dob-field {
+    padding-left: 26.5px;
+}
+
+.height-field {
+    padding-left: 40px;
+    margin-left: 15px;
+    text-align: center;
+    color: blue;
+}
+
+.weight-field {
+    padding-left: 40px;
+    margin-left: 15px;
+    text-align: center;
+    color: blue;
+}
+
+.urdu-name-sec,
+.english-name-sec,
+.sex-sec,
+.blood-type-sec,
+.dob-sec,
+.height-sec,
+.ID-sec,
+.weight-sec {
+    flex-direction: row;
+    width: 25%;
+    height: 50px;
+    border-right: solid black 1px;
+}
+
+.height-sec {
+    padding-right: 48px;
+}
+
+.sex-sub-sec {
+    margin-top: 8px;
+    padding-right: 20px;
+}
+
+.ID-sec {
+    width: 50%;
+}
+
+
+/* ? Row-2 of Main Section */
+
+.row-2,
+.row-3 {
+    border-top: none;
 }
