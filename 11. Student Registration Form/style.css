@@ -69,7 +69,8 @@ html {
 
 .row-1,
 .row-2,
-.row-3 {
+.row-3,
+.row-4 {
     display: flex;
     height: 50px;
     border: #000 2px solid;
@@ -83,7 +84,9 @@ html {
 .dob-lbl,
 .height-lbl,
 .id-lbl,
-.weight-lbl {
+.weight-lbl,
+.email-lbl,
+.cellph-lbl {
     font-size: 13pt;
     padding: 0 30px;
     border-right: solid black 1px;
@@ -120,13 +123,24 @@ html {
     padding-left: 27px;
 }
 
+.email-lbl {
+    padding-left: 85px;
+}
+
+.cellph-lbl {
+    padding-left: 20px;
+    padding-right: 54px;
+}
+
 .u-n-field,
 .e-n-field,
 .b-t-field,
 .dob-field,
 .height-field,
 .id-field,
-.weight-field {
+.weight-field,
+.email-field,
+.cellph-field {
     margin-top: 10px;
     margin-left: 10px;
     padding: 5px 0;
@@ -139,17 +153,22 @@ html {
 }
 
 .height-field {
-    padding-left: 40px;
-    margin-left: 15px;
+    width: 199px;
     text-align: center;
-    color: blue;
 }
 
 .weight-field {
-    padding-left: 40px;
-    margin-left: 15px;
     text-align: center;
-    color: blue;
+    width: 235px;
+}
+
+.email-field {
+    width: 400px;
+}
+
+.cellph-field {
+    width: 240px;
+    text-align: center;
 }
 
 .urdu-name-sec,
@@ -159,7 +178,9 @@ html {
 .dob-sec,
 .height-sec,
 .ID-sec,
-.weight-sec {
+.weight-sec,
+.email-sec,
+.cellph-sec {
     flex-direction: row;
     width: 25%;
     height: 50px;
@@ -179,10 +200,19 @@ html {
     width: 50%;
 }
 
+.email-sec {
+    width: 45.5%;
+}
+
+.cellph-sec {
+    width: 29.5%;
+}
+
 
 /* ? Row-2 of Main Section */
 
 .row-2,
-.row-3 {
+.row-3,
+.row-4 {
     border-top: none;
 }
