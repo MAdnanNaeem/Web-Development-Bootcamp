@@ -69,12 +69,13 @@ html {
 
 .u-n-label {
   font-size: 13pt;
-  padding: 0 20px;
+  padding: 0 15px;
   border-right: solid black 1px;
 }
 
 .u-n-field {
   margin-top: 8px;
+  margin-left: 10px;
   padding: 5px 0;
   border: none;
   margin-right: 10px;
