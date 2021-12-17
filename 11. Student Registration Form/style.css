@@ -21,3 +21,61 @@ html {
   transform: translate(-50%);
   text-align: center;
 }
+
+.date-bar {
+  position: relative;
+  background-color: peachpuff;
+  height: 30px;
+}
+
+.date-components {
+  position: absolute;
+  left: 58%;
+}
+
+.date-label {
+  position: absolute;
+  top: 7px;
+  font-size: 12pt;
+  font-weight: 400;
+}
+
+.date-picker {
+  margin-left: 53px;
+  margin-top: 6px;
+}
+
+.person-section-heading {
+  background-color: #fff;
+  color: #000;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 14pt;
+  background-color: plum;
+}
+
+.row-1 {
+  position: relative;
+  height: 50px;
+  border: #000 2px solid;
+}
+
+.urdu-name-sec {
+  position: absolute;
+  height: 50px;
+  border-right: solid black 1px;
+}
+
+.u-n-label {
+  font-size: 13pt;
+  padding: 0 20px;
+  border-right: solid black 1px;
+}
+
+.u-n-field {
+  margin-top: 8px;
+  padding: 5px 0;
+  border: none;
+  margin-right: 10px;
+}
