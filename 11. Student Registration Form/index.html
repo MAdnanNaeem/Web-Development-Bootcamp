@@ -14,7 +14,7 @@
         <h1 class="primary-heading">Employee Information Registration Form</h1>
     </header>
     <main>
-        <form action="">
+        <form>
             <div class="date-bar">
                 <div class="date-components">
                     <h5 class="date-label">Date : </h5>
@@ -25,86 +25,88 @@
             <div class=person-data-section "">
                 <h5 class="person-section-heading">Personal Data & Contacts</h5>
 
+                <div class="child-parent">
+                    <div class="left-section">
 
-                <div class="row-1">
+                        <div class="row-1">
 
-                    <div class="urdu-name-sec">
-                        <label class="u-n-lbl" for="u-n">Name in Urdu</label>
-                        <input class="u-n-field" type="text" name="Urdu-Name" id="u-n">
-                    </div>
-                    <div class="english-name-sec">
-                        <label class="e-n-lbl" for="e-n">Name in English</label>
-                        <input class="e-n-field" type="text" name="English-Name" id="e-n">
-                    </div>
-                    <div class="sex-sec">
-                        <div class="sex-sub-sec">
-                            <label class="sex-main-lbl" for="s-1">Sex</label>
-                            <label class="sex-m-lbl" for="s-1">Male</label>
-                            <input class="sex-m-field" type="radio" name="Sex" value="Male" id="s-1">
-                            <label class="sex-f-lbl" for="s-2">Female</label>
-                            <input class="sex-f-field" type="radio" name="Sex" value="Female" id="s-2">
+                            <div class="urdu-name-sec">
+                                <label class="u-n-lbl" for="u-n">Name in Urdu</label>
+                                <input class="u-n-field" type="text" name="Urdu-Name" id="u-n" placeholder="Enter name in Urdu">
+                            </div>
+                            <div class="english-name-sec">
+                                <label class="e-n-lbl" for="e-n">Name in English</label>
+                                <input class="e-n-field" type="text" name="English-Name" id="e-n" placeholder="Enter name in English" required>
+                            </div>
+                            <div class="sex-sec">
+                                <div class="sex-sub-sec">
+                                    <label class="sex-main-lbl" for="s-1">Sex</label>
+                                    <label class="sex-m-lbl" for="s-1">Male</label>
+                                    <input class="sex-m-field" type="radio" name="Sex" value="Male" id="s-1" required>
+                                    <label class="sex-f-lbl" for="s-2">Female</label>
+                                    <input class="sex-f-field" type="radio" name="Sex" value="Female" id="s-2">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
 
-                <div class="row-2">
+                        <div class="row-2">
 
-                    <div class="blood-type-sec">
-                        <label class="b-t-lbl" for="b-t">Blood Type</label>
-                        <input class="b-t-field" type="text" name="Blood-Type" id="b-t">
-                    </div>
-                    <div class="dob-sec">
-                        <label class="dob-lbl" for="dob">Date of Birth</label>
-                        <input class="dob-field" type="date" name="date-of-birth" id="dob">
-                    </div>
-                    <div class="height-sec">
-                        <label class="height-lbl" for="height">Height</label>
-                        <input class="height-field" type="number" placeholder="enter height in cm" name="height" id="height">
-                    </div>
-                </div>
+                            <div class="blood-type-sec">
+                                <label class="b-t-lbl" for="b-t">Blood Type</label>
+                                <input class="b-t-field" type="text" name="Blood-Type" id="b-t" placeholder="Enter blood type">
+                            </div>
+                            <div class="dob-sec">
+                                <label class="dob-lbl" for="dob">Date of Birth</label>
+                                <input class="dob-field" type="date" name="date-of-birth" id="dob" required>
+                            </div>
+                            <div class="height-sec">
+                                <label class="height-lbl" for="height">Height</label>
+                                <input class="height-field" type="number" placeholder="Enter height in cm" name="height" id="height">
+                            </div>
+                        </div>
 
-                <div class="row-3">
+                        <div class="row-3">
 
-                    <div class="ID-sec">
-                        <label class="id-lbl" for="id">ID Card Number</label>
-                        <input class="id-field" type="text" name="ID-card-no" id="id">
-                    </div>
-                    <div class="weight-sec">
-                        <label class="weight-lbl" for="weight">Weight</label>
-                        <input class="weight-field" type="number" placeholder="enter weight in Kg" name="weight" id="weight">
-                    </div>
-                </div>
+                            <div class="ID-sec">
+                                <label class="id-lbl" for="id">ID Card Number</label>
+                                <input class="id-field" type="text" name="ID-card-no" id="id" placeholder="Enter CNIC Number" required>
+                            </div>
+                            <div class="weight-sec">
+                                <label class="weight-lbl" for="weight">Weight</label>
+                                <input class="weight-field" type="number" placeholder="Enter weight in kg" name="weight" id="weight">
+                            </div>
+                        </div>
 
-                <div class="row-4">
+                        <div class="row-4">
 
-                    <div class="email-sec">
-                        <label class=email-lbl " for="email ">E-mail</label>
-                        <input class="email-field " type="email " name="email " id="email ">
+                            <div class="email-sec">
+                                <label class=email-lbl " for="email ">E-mail</label>
+                        <input class="email-field " type="email " name="email " id="email " placeholder="Enter your email " required>
                     </div>
                     <div class="cellph-sec ">
                         <label class="cellph-lbl " for="cellph ">Mobile Phone</label>
-                        <input class="cellph-field " type="tel " placeholder="Enter weight in Kg " name="cellph " id="cellph ">
+                        <input class="cellph-field " type="tel " placeholder="Enter weight in Kg " name="cellph " id="cellph " required>
                     </div>
                 </div>
 
                 <div class="row-5 ">
 
                     <div class="edu-sec ">
-                        <label class=edu-lbl " for="edu ">Educational</label>
-                        <input class="edu-field " type="text " name="Education " id="edu ">
-                    </div>
-                    <div class="social-sec ">
-                        <label class="social-lbl " for="social ">QQ / MSN</label>
-                        <input class="social-field " type="text " placeholder="Enter your social ID " name="social-ID " id="social">
-                    </div>
-                </div>
+                        <label class=edu-lbl " for="edu ">Qualification</label>
+                                <input class="edu-field " type="text " name="Education " id="edu " placeholder="Enter your education" required>
+                            </div>
+                            <div class="social-sec ">
+                                <label class="social-lbl " for="social ">QQ / MSN</label>
+                                <input class="social-field " type="text " placeholder="Enter your social ID " name="social-ID " id="social">
+                            </div>
+                        </div>
 
-                <div class="row-6">
+                        <div class="row-6">
 
-                    <div class="subj-sec">
-                        <label class=subj-lbl " for="subj ">Major Subject</label>
-                        <input class="subj-field " type="text " name="Major-Subject " id="subj ">
+                            <div class="subj-sec">
+                                <label class=subj-lbl " for="subj ">Major Subject</label>
+                        <input class="subj-field " type="text " name="Major-Subject " id="subj " placeholder="Enter major subjects " required>
                     </div>
                     <div class="highest-sec ">
                         <label class="highest-lbl " for="highest ">Highest Level</label>
@@ -112,15 +114,23 @@
                     </div>
                 </div>
 
+                </div>
+
+                <div class="right-section ">
+                    <p>Upload Picture Section</p>
+                </div>
+
+                </div>
+
                   <div class="row-7 ">
 
                     <div class="addr-sec ">
                         <label class="addr-lbl " for="addr ">Residence Address</label>
-                        <input class="addr-field " type="text " name="Residence-Address " id="addr ">
+                        <input class="addr-field " type="text " name="Residence-Address " id="addr " placeholder="Enter residence address ">
                     </div>
                     <div class="post-sec ">
                         <label class="post-lbl " for="post ">Postal Code</label>
-                        <input class="post-field " type="number "  name="Postal-Code " id="post ">
+                        <input class="post-field " type="number "  name="Postal-Code " id="post " placeholder="Enter postal code ">
                     </div>
                 </div>
 
@@ -128,64 +138,75 @@
 
                     <div class="pres-addr-sec ">
                         <label class="pres-addr-lbl " for="pres-addr ">Present Address</label>
-                        <input class="pres-addr-field " type="text " name="Present-Address " id="pres-addr ">
+                        <input class="pres-addr-field " type="text " name="Present-Address " id="pres-addr " placeholder="Enter present address " required>
                     </div>
                     <div class="post2-sec ">
                         <label class="post2-lbl " for="post2 ">Postal Code</label>
-                        <input class="post2-field " type="number "  name="Postal-Code " id="post2 ">
+                        <input class="post2-field " type="number "  name="Postal-Code " id="post2 " placeholder="Enter postal code ">
                     </div>
                 </div>
                 <div class="row-9 ">
                     <h5> Incase of emergency, please inform the following person: </h5>
                 </div>
-            </div>
 
-             <div class="row-10 ">
+                  <div class="row-10 ">
 
                     <div class="emerg-name-sec ">
                         <label class="emerg-name-lbl " for="emerg-name ">Name</label>
-                        <input class="emerg-name-field " type="text " name="Emergency-Name " id="emerg-name ">
+                        <input class="emerg-name-field " type="text " name="Emergency-Name " id="emerg-name " placeholder="Enter name " required>
                     </div>
                     <div class="emerg-relation-sec ">
                         <label class="emerg-relation-lbl " for="emerg-relation ">Relationship</label>
-                        <input class="emerg-relation-field " type="text " name="Emergency-Relationship " id="emerg-relation ">
+                        <input class="emerg-relation-field " type="text " name="Emergency-Relationship " id="emerg-relation " placeholder="Enter relationship " required>
                     </div>
                     <div class="emerg-tel-sec ">
                         <label class="emerg-tel-lbl " for="emerg-tel ">Telephone</label>
-                        <input class="emerg-tel-field " type="tel " placeholder="enter height in cm " name="emerg-tel " id="emerg-tel ">
+                        <input class="emerg-tel-field " type="tel " placeholder="Enter phone number " name="emerg-tel " id="emerg-tel " required >
                     </div>
                 </div>
+            </div>
 
-                <div class=family-data-section " ">
+           
+
+                <div class="family-data-section">
                 <h5 class="family-section-heading ">Family Data & Contacts</h5>
        
                       <div class="row-11 ">
 
                     <div class="family-name-sec ">
                         <label class="family-name-lbl " for="family-name ">Name</label>
-                        <input class="family-name-field " type="text " name="Family-Name " id="family-name ">
+                        <input class="family-name-field " type="text " name="Family-Name " id="family-name " placeholder="Enter name ">
                     </div>
                     
                     <div class="family-relation-sec ">
                         <label class="family-relation-lbl " for="family-relation ">Relationship</label>
-                        <input class="family-relation-field " type="text " name=" Family-Relationship " id="family-relation ">
+                        <input class="family-relation-field " type="text " name=" Family-Relationship " id="family-relation " placeholder="Enter relationship ">
                     </div>
                     <div class="family-tel-sec ">
                         <label class="family-tel-lbl " for="family-tel ">Telephone</label>
-                        <input class="family-tel-field " type="tel " placeholder="enter height in cm " name="family-tel " id="family-tel ">
+                        <input class="family-tel-field " type="tel " placeholder="Enter phone number " name="family-tel " id="family-tel ">
                     </div>
                     <div class="family-age-sec ">
                         <label class="family-age-lbl " for="family-age ">Age</label>
-                        <input class="family-age-field " type="number " name="family-age " id="family-age ">
+                        <input class="family-age-field " type="number " name="family-age " id="family-age " placeholder="Enter age ">
                     </div>
                 </div>
             </div>
 
+              <div class="btn-section ">
+                  <button type="reset">Reset</button>
+                  <button type="submit ">Save</button>
+                  <button type="button ">View</button>
 
+
+              </div>
 
         </form>
     </main>
-    <footer></footer>
+    <footer class="signature ">&copy; M ADNAN NAEEM</footer>
+
+
+    <script src="script.js "></script>
 </body>
 
 </html>

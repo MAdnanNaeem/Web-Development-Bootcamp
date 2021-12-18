@@ -1,71 +1,86 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 .main-header {
-    background-color: royalblue;
-    height: 75px;
-    position: relative;
+  background-color: royalblue;
+  height: 75px;
+  position: relative;
 }
 
 .primary-heading {
-    color: #fff;
-    position: absolute;
-    top: 8px;
-    left: 50%;
-    transform: translate(-50%);
-    text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
 }
 
 .date-bar {
-    position: relative;
-    background-color: peachpuff;
-    height: 30px;
+  position: relative;
+  background-color: peachpuff;
+  height: 30px;
 }
 
 .date-components {
-    position: absolute;
-    left: 80%;
+  position: absolute;
+  left: 80%;
 }
 
 .date-label {
-    position: absolute;
-    top: 7px;
-    font-size: 12pt;
-    font-weight: 400;
+  position: absolute;
+  top: 7px;
+  font-size: 12pt;
+  font-weight: 400;
 }
 
 .date-picker {
-    margin-left: 53px;
-    margin-top: 2.5px;
+  margin-left: 53px;
+  margin-top: 6px;
 }
-
 
 /* ? Main Section */
 
 .person-data-section,
 .family-data-section {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .person-section-heading,
 .family-section-heading {
-    background-color: #fff;
-    color: #000;
-    height: 40px;
-    text-align: center;
-    padding-top: 7px;
-    font-size: 14pt;
-    background-color: plum;
+  background-color: #fff;
+  color: #000;
+  height: 40px;
+  text-align: center;
+  padding-top: 7px;
+  font-size: 14pt;
+  background-color: plum;
 }
 
+.child-parent {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-section {
+  width: 75%;
+}
+
+.right-section {
+  width: 25%;
+  border-right: #000 2px solid;
+  border-top: #000 2px solid;
+  border-bottom: #000 2px solid;
+  text-align: center;
+}
 
 /* ? Row-1 of Main Section */
 
@@ -80,9 +95,18 @@ html {
 .row-9,
 .row-10,
 .row-11 {
-    display: flex;
-    height: 50px;
-    border: #000 2px solid;
+  display: flex;
+  height: 45px;
+  border: #000 2px solid;
+}
+
+.row-1,
+.row-2,
+.row-3,
+.row-4,
+.row-5,
+.row-6 {
+  border-right: none;
 }
 
 .u-n-lbl,
@@ -111,26 +135,27 @@ html {
 .family-relation-lbl,
 .family-tel-lbl,
 .family-age-lbl {
-    padding: 0 30px;
-    text-align: center;
-    margin-top: 10px;
-    float: left;
-    width: 200px;
-    border-right: solid black 1px;
+  padding: 0 30px;
+  text-align: center;
+  margin-top: 10px;
+  float: left;
+  width: 200px;
+  border-right: solid black 1px;
 }
 
 .sex-main-lbl {
-    padding-left: 50px;
+  padding-left: 30px;
+  margin: 0;
 }
 
 .sex-m-lbl {
-    margin-left: 25px;
+  margin-left: 25px;
 }
 
 .sex-m-lbl,
 .sex-f-lbl {
-    border: none;
-    padding: 0 10px;
+  border: none;
+  padding: 0 10px;
 }
 
 .u-n-field,
@@ -157,29 +182,36 @@ html {
 .family-relation-field,
 .family-tel-field,
 .family-age-field {
-    margin-top: 10px;
-    margin-left: 10px;
-    padding: 5px 0;
-    border: none;
-    margin-right: 10px;
+  margin-top: 6px;
+  margin-left: 30px;
+  text-align: left;
+  padding: 5px 0;
+  border: none;
+  margin-right: 10px;
 }
 
 .dob-field {
-    padding-left: 26.5px;
+  padding-left: 26.5px;
 }
 
+.id-field,
 .email-field,
 .cellph-field,
 .social-field,
-.highest-field {
-    width: 180px;
-    text-align: center;
+.highest-field,
+.edu-field,
+.subj-field,
+.addr-field,
+.pres-addr-field,
+.post-field,
+.post2-field {
+  width: 180px;
 }
 
 .height-field,
 .weight-field {
-    margin-left: 20px;
-    text-align: center;
+  margin-left: 15px;
+  text-align: center;
 }
 
 .urdu-name-sec,
@@ -207,48 +239,47 @@ html {
 .family-relation-sec,
 .family-tel-sec,
 .family-age-sec {
-    flex-direction: row;
-    width: 25%;
-    height: 50px;
-    border-right: solid black 1px;
+  flex-direction: row;
+  width: 33.4%;
+  height: 45px;
+  border-right: solid black 1px;
 }
 
 .height-sec {
-    padding-right: 48px;
+  padding-right: 48px;
 }
 
 .sex-sub-sec {
-    margin-top: 8px;
-    padding-right: 20px;
+  margin-top: 8px;
+  padding-right: 20px;
 }
 
 .ID-sec {
-    width: 50%;
+  width: 66.8%;
 }
 
 .email-sec,
 .edu-sec,
 .subj-sec {
-    width: 45.5%;
+  width: 60%;
 }
 
 .cellph-sec,
 .social-sec,
 .highest-sec {
-    width: 29.5%;
+  width: 40%;
 }
 
 .addr-sec,
 .pres-addr-sec {
-    width: 60%;
+  width: 60%;
 }
 
 .post-sec,
 .post2-sec,
 .emerg-tel-sec {
-    border: none;
+  border: none;
 }
-
 
 /* ? Row-2 of Main Section */
 
@@ -261,12 +292,416 @@ html {
 .row-8,
 .row-9,
 .row-10 {
-    border-top: none;
+  border-top: none;
 }
 
-.row-9>h5 {
+/* Incase-heading */
+
+.row-9 > h5 {
+  margin-left: 30px;
+  margin-top: 15px;
+  font-size: 12pt;
+  letter-spacing: 1.6px;
+}
+
+/* *  Buttons */
+
+.btn-section {
+  margin-left: 60%;
+}
+
+button {
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: royalblue;
+  color: whitesmoke;
+  font-weight: bold;
+  padding: 12px 30px;
+  font-size: 11pt;
+  letter-spacing: 1.5px;
+  border-radius: 50px;
+}
+
+footer {
+  margin: 0 0 0 50px;
+  text-align: left;
+  font-family: monospace;
+}
+
+.signature {
+  padding-bottom: 30px;
+  color: cadetblue;
+  font-weight: bold;
+  font-size: 15pt;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1209px) {
+  .main-header {
+    height: 35px;
+    font-size: 7pt;
+  }
+  .primary-heading {
+    top: 6px;
+  }
+  .person-section-heading,
+  .family-section-heading {
+    height: 25px;
+    padding-top: 4px;
+    font-size: 10.5pt;
+  }
+
+  .date-components {
+    left: 75%;
+  }
+  .date-label {
+    top: 6px;
+    font-size: 11pt;
+    font-weight: normal;
+  }
+
+  .date-picker {
+    margin-left: 53px;
+    margin-top: 6px;
+  }
+  .child-parent {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .right-section {
+    height: 340px;
+    border-right: none;
+  }
+
+  .row-1,
+  .row-2,
+  .row-3,
+  .row-4,
+  .row-5,
+  .row-6,
+  .row-7,
+  .row-8,
+  .row-9,
+  .row-10,
+  .row-11 {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
+    border-right: solid black 2px;
+  }
+
+  .row-1,
+  .row-2 {
+    height: 170px;
+  }
+  .row-7 {
+    border-top: black solid 2px;
+  }
+  .row-6 {
+    border-bottom: none;
+  }
+
+  .row-9 {
+    height: 40px;
+  }
+
+  .row-11 {
+    height: 200px;
+  }
+
+  .dob-field {
+    padding-left: 0;
+  }
+
+  .row-9 > h5 {
     margin-left: 30px;
-    margin-top: 15px;
+    margin-top: 10px;
+    font-size: 11pt;
+  }
+
+  .urdu-name-sec,
+  .english-name-sec,
+  .sex-sec,
+  .blood-type-sec,
+  .dob-sec,
+  .height-sec,
+  .ID-sec,
+  .weight-sec,
+  .email-sec,
+  .cellph-sec,
+  .edu-sec,
+  .social-sec,
+  .subj-sec,
+  .highest-sec,
+  .addr-sec,
+  .post-sec,
+  .pres-addr-sec,
+  .post2-sec,
+  .emerg-name-sec,
+  .emerg-relation-sec,
+  .emerg-tel-sec,
+  .family-name-sec,
+  .family-relation-sec,
+  .family-tel-sec,
+  .family-age-sec {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10px;
+    border-right: none;
+  }
+
+  .u-n-lbl,
+  .e-n-lbl,
+  .sex-main-lbl,
+  .b-t-lbl,
+  .b-t-lbl,
+  .dob-lbl,
+  .height-lbl,
+  .id-lbl,
+  .weight-lbl,
+  .email-lbl,
+  .cellph-lbl,
+  .edu-lbl,
+  .social-lbl,
+  .highest-lbl,
+  .subj-lbl,
+  .addr-lbl,
+  .post-lbl,
+  .pres-addr-lbl,
+  .post2-lbl,
+  .emerg-name-lbl,
+  .emerg-relation-lbl,
+  .emerg-tel-lbl,
+  .family-name-lbl,
+  .family-relation-lbl,
+  .family-tel-lbl,
+  .family-age-lbl {
+    padding: 0 30px;
+    text-align: center;
+    margin-top: 10px;
+    float: left;
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 1210px) and (max-width: 1408px) {
+  .main-header {
+    height: 45px;
+    font-size: 10pt;
+  }
+  .primary-heading {
+    top: 7px;
+  }
+  .person-section-heading,
+  .family-section-heading {
+    height: 35px;
+    padding-top: 8px;
     font-size: 12pt;
-    letter-spacing: 1.6px;
+  }
+
+  .u-n-lbl,
+  .e-n-lbl,
+  .sex-main-lbl,
+  .b-t-lbl,
+  .b-t-lbl,
+  .dob-lbl,
+  .height-lbl,
+  .id-lbl,
+  .weight-lbl,
+  .email-lbl,
+  .cellph-lbl,
+  .edu-lbl,
+  .social-lbl,
+  .highest-lbl,
+  .subj-lbl,
+  .addr-lbl,
+  .post-lbl,
+  .pres-addr-lbl,
+  .post2-lbl,
+  .emerg-name-lbl,
+  .emerg-relation-lbl,
+  .emerg-tel-lbl,
+  .family-name-lbl,
+  .family-relation-lbl,
+  .family-tel-lbl,
+  .family-age-lbl {
+    padding-left: 15px;
+    text-align: left;
+    float: left;
+    width: 160px;
+    font-size: 11pt;
+  }
+
+  .u-n-field,
+  .e-n-field,
+  .b-t-field,
+  .dob-field,
+  .cellph-field,
+  .social-field,
+  .highest-field,
+  .family-name-field,
+  .family-relation-field,
+  .family-tel-field,
+  .family-age-field {
+    font-size: 10pt;
+    width: 130px;
+    margin-left: 8px;
+    margin-right: 0;
+  }
+
+  .sex-main-lbl,
+  .height-lbl,
+  .weight-lbl {
+    width: 80px;
+  }
+
+  .height-field {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1408px) and (max-width: 1550px) {
+  .main-header {
+    height: 50px;
+  }
+  .primary-heading {
+    top: 5px;
+  }
+  .date-bar {
+    height: 25px;
+  }
+  .date-label {
+    top: 3px;
+    font-size: 10pt;
+  }
+
+  .date-picker {
+    margin-top: 0;
+    margin-bottom: 1px;
+  }
+
+  .person-section-heading,
+  .family-section-heading {
+    height: 30px;
+    padding-top: 4px;
+    font-size: 12pt;
+  }
+
+  .row-1,
+  .row-2,
+  .row-3,
+  .row-4,
+  .row-5,
+  .row-6,
+  .row-7,
+  .row-8,
+  .row-9,
+  .row-10,
+  .row-11 {
+    height: 35px;
+    font-size: 11pt;
+  }
+
+  .u-n-lbl,
+  .e-n-lbl,
+  .sex-main-lbl,
+  .b-t-lbl,
+  .b-t-lbl,
+  .dob-lbl,
+  .height-lbl,
+  .id-lbl,
+  .weight-lbl,
+  .email-lbl,
+  .cellph-lbl,
+  .edu-lbl,
+  .social-lbl,
+  .highest-lbl,
+  .subj-lbl,
+  .addr-lbl,
+  .post-lbl,
+  .pres-addr-lbl,
+  .post2-lbl,
+  .emerg-name-lbl,
+  .emerg-relation-lbl,
+  .emerg-tel-lbl,
+  .family-name-lbl,
+  .family-relation-lbl,
+  .family-tel-lbl,
+  .family-age-lbl {
+    padding: 0 10px;
+    width: 180px;
+  }
+
+  .sex-m-lbl {
+    margin-left: 0;
+  }
+  .height-sec {
+    padding-right: 0;
+  }
+
+  .sex-sub-sec {
+    margin-top: 8px;
+    padding-right: 10px;
+  }
+
+  .u-n-field,
+  .e-n-field,
+  .b-t-field,
+  .dob-field,
+  .height-field,
+  .id-field,
+  .weight-field,
+  .email-field,
+  .cellph-field,
+  .edu-field,
+  .social-field,
+  .subj-field,
+  .highest-field,
+  .addr-field,
+  .post-field,
+  .pres-addr-field,
+  .post2-field,
+  .emerg-name-field,
+  .emerg-relation-field,
+  .emerg-tel-field,
+  .family-name-field,
+  .family-relation-field,
+  .family-tel-field,
+  .family-age-field {
+    margin-left: 20px;
+  }
+  .urdu-name-sec,
+  .english-name-sec,
+  .sex-sec,
+  .blood-type-sec,
+  .dob-sec,
+  .height-sec,
+  .ID-sec,
+  .weight-sec,
+  .email-sec,
+  .cellph-sec,
+  .edu-sec,
+  .social-sec,
+  .subj-sec,
+  .highest-sec,
+  .addr-sec,
+  .post-sec,
+  .pres-addr-sec,
+  .post2-sec,
+  .emerg-name-sec,
+  .emerg-relation-sec,
+  .emerg-tel-sec,
+  .family-name-sec,
+  .family-relation-sec,
+  .family-tel-sec,
+  .family-age-sec {
+    border-right: solid black 1px;
+    height: 35px;
+  }
+
+  .row-9 > h5 {
+    margin-top: 8px;
+  }
 }
