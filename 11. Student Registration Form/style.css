@@ -112,7 +112,11 @@ html {
 .family-tel-lbl,
 .family-age-lbl {
     padding: 0 30px;
-    /* border-right: solid black 1px; */
+    text-align: center;
+    margin-top: 10px;
+    float: left;
+    width: 200px;
+    border-right: solid black 1px;
 }
 
 .sex-main-lbl {
@@ -128,33 +132,6 @@ html {
     border: none;
     padding: 0 10px;
 }
-
-
-/* .b-t-lbl {
-    padding-left: 50px;
-    text-align: left;
-}
-
-.dob-lbl {
-    padding-left: 59px;
-}
-
-.id-lbl {
-    padding-left: 10px;
-}
-
-.weight-lbl {
-    padding-left: 27px;
-}
-
-.email-lbl {
-    padding-left: 80px;
-}
-
-.cellph-lbl {
-    padding-left: 20px;
-    padding-right: 54px;
-} */
 
 .u-n-field,
 .e-n-field,
@@ -191,13 +168,17 @@ html {
     padding-left: 26.5px;
 }
 
-.height-field,
-.weight-field,
 .email-field,
 .cellph-field,
 .social-field,
 .highest-field {
     width: 180px;
+    text-align: center;
+}
+
+.height-field,
+.weight-field {
+    margin-left: 20px;
     text-align: center;
 }
 
