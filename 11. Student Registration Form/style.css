@@ -49,12 +49,14 @@ html {
 
 /* ? Main Section */
 
-.person-data-section {
+.person-data-section,
+.family-data-section {
     display: flex;
     flex-direction: column;
 }
 
-.person-section-heading {
+.person-section-heading,
+.family-section-heading {
     background-color: #fff;
     color: #000;
     height: 40px;
@@ -70,7 +72,14 @@ html {
 .row-1,
 .row-2,
 .row-3,
-.row-4 {
+.row-4,
+.row-5,
+.row-6,
+.row-7,
+.row-8,
+.row-9,
+.row-10,
+.row-11 {
     display: flex;
     height: 50px;
     border: #000 2px solid;
@@ -86,10 +95,24 @@ html {
 .id-lbl,
 .weight-lbl,
 .email-lbl,
-.cellph-lbl {
-    font-size: 13pt;
+.cellph-lbl,
+.edu-lbl,
+.social-lbl,
+.highest-lbl,
+.subj-lbl,
+.addr-lbl,
+.post-lbl,
+.pres-addr-lbl,
+.post2-lbl,
+.emerg-name-lbl,
+.emerg-relation-lbl,
+.emerg-tel-lbl,
+.family-name-lbl,
+.family-relation-lbl,
+.family-tel-lbl,
+.family-age-lbl {
     padding: 0 30px;
-    border-right: solid black 1px;
+    /* border-right: solid black 1px; */
 }
 
 .sex-main-lbl {
@@ -106,7 +129,8 @@ html {
     padding: 0 10px;
 }
 
-.b-t-lbl {
+
+/* .b-t-lbl {
     padding-left: 50px;
     text-align: left;
 }
@@ -124,13 +148,13 @@ html {
 }
 
 .email-lbl {
-    padding-left: 85px;
+    padding-left: 80px;
 }
 
 .cellph-lbl {
     padding-left: 20px;
     padding-right: 54px;
-}
+} */
 
 .u-n-field,
 .e-n-field,
@@ -140,7 +164,22 @@ html {
 .id-field,
 .weight-field,
 .email-field,
-.cellph-field {
+.cellph-field,
+.edu-field,
+.social-field,
+.subj-field,
+.highest-field,
+.addr-field,
+.post-field,
+.pres-addr-field,
+.post2-field,
+.emerg-name-field,
+.emerg-relation-field,
+.emerg-tel-field,
+.family-name-field,
+.family-relation-field,
+.family-tel-field,
+.family-age-field {
     margin-top: 10px;
     margin-left: 10px;
     padding: 5px 0;
@@ -152,22 +191,13 @@ html {
     padding-left: 26.5px;
 }
 
-.height-field {
-    width: 199px;
-    text-align: center;
-}
-
-.weight-field {
-    text-align: center;
-    width: 235px;
-}
-
-.email-field {
-    width: 400px;
-}
-
-.cellph-field {
-    width: 240px;
+.height-field,
+.weight-field,
+.email-field,
+.cellph-field,
+.social-field,
+.highest-field {
+    width: 180px;
     text-align: center;
 }
 
@@ -180,7 +210,22 @@ html {
 .ID-sec,
 .weight-sec,
 .email-sec,
-.cellph-sec {
+.cellph-sec,
+.edu-sec,
+.social-sec,
+.subj-sec,
+.highest-sec,
+.addr-sec,
+.post-sec,
+.pres-addr-sec,
+.post2-sec,
+.emerg-name-sec,
+.emerg-relation-sec,
+.emerg-tel-sec,
+.family-name-sec,
+.family-relation-sec,
+.family-tel-sec,
+.family-age-sec {
     flex-direction: row;
     width: 25%;
     height: 50px;
@@ -200,12 +245,27 @@ html {
     width: 50%;
 }
 
-.email-sec {
+.email-sec,
+.edu-sec,
+.subj-sec {
     width: 45.5%;
 }
 
-.cellph-sec {
+.cellph-sec,
+.social-sec,
+.highest-sec {
     width: 29.5%;
+}
+
+.addr-sec,
+.pres-addr-sec {
+    width: 60%;
+}
+
+.post-sec,
+.post2-sec,
+.emerg-tel-sec {
+    border: none;
 }
 
 
@@ -213,6 +273,19 @@ html {
 
 .row-2,
 .row-3,
-.row-4 {
+.row-4,
+.row-5,
+.row-6,
+.row-7,
+.row-8,
+.row-9,
+.row-10 {
     border-top: none;
+}
+
+.row-9>h5 {
+    margin-left: 30px;
+    margin-top: 15px;
+    font-size: 12pt;
+    letter-spacing: 1.6px;
 }
