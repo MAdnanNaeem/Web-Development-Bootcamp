@@ -340,7 +340,208 @@ input[type="email"]:not(:placeholder-shown):not(:focus):invalid {
   border: 2px dotted red;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 1209px) {
+@media only screen and (min-width: 350px) and (max-width: 760px) {
+  .main-header {
+    height: 60px;
+    font-size: 6pt;
+  }
+  .primary-heading {
+    left: 0;
+    transform: translate(0);
+    top: 12px;
+    margin-left: 25px;
+  }
+  .person-section-heading,
+  .family-section-heading {
+    height: 25px;
+    padding-top: 4px;
+    font-size: 10pt;
+  }
+
+  .date-components {
+    left: 0;
+  }
+  .date-label {
+    margin-left: 5px;
+    top: 5px;
+    font-size: 10pt;
+    font-weight: normal;
+  }
+
+  .date-bar {
+    height: 25px;
+  }
+
+  .date-picker {
+    margin-left: 53px;
+    margin-top: 5px;
+    font-size: 8pt;
+  }
+  .child-parent {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .right-section {
+    height: 180px;
+    border-right: none;
+  }
+
+  .row-1,
+  .row-2,
+  .row-3,
+  .row-4,
+  .row-5,
+  .row-6,
+  .row-7,
+  .row-8,
+  .row-9,
+  .row-10,
+  .row-11 {
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    width: 100%;
+    border-right: solid black 2px;
+  }
+
+  .row-1,
+  .row-2 {
+    height: 180px;
+  }
+  .row-7 {
+    border-top: black solid 2px;
+  }
+  .row-6 {
+    border-bottom: none;
+  }
+
+  .row-9 {
+    height: 40px;
+  }
+  .row-10 {
+    height: 180px;
+  }
+  .row-11 {
+    height: 235px;
+  }
+
+  .dob-field {
+    padding-left: 0;
+  }
+
+  .row-9 > h5 {
+    margin-left: 10px;
+    margin-top: 10px;
+    font-size: 9pt;
+    letter-spacing: normal;
+  }
+
+  .urdu-name-sec,
+  .english-name-sec,
+  .sex-sec,
+  .blood-type-sec,
+  .dob-sec,
+  .height-sec,
+  .ID-sec,
+  .weight-sec,
+  .email-sec,
+  .cellph-sec,
+  .edu-sec,
+  .social-sec,
+  .subj-sec,
+  .highest-sec,
+  .addr-sec,
+  .post-sec,
+  .pres-addr-sec,
+  .post2-sec,
+  .emerg-name-sec,
+  .emerg-relation-sec,
+  .emerg-tel-sec,
+  .family-name-sec,
+  .family-relation-sec,
+  .family-tel-sec,
+  .family-age-sec {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 10px;
+    border-right: none;
+  }
+
+  .u-n-lbl,
+  .e-n-lbl,
+  .sex-main-lbl,
+  .b-t-lbl,
+  .b-t-lbl,
+  .dob-lbl,
+  .height-lbl,
+  .id-lbl,
+  .weight-lbl,
+  .email-lbl,
+  .cellph-lbl,
+  .edu-lbl,
+  .social-lbl,
+  .highest-lbl,
+  .subj-lbl,
+  .addr-lbl,
+  .post-lbl,
+  .pres-addr-lbl,
+  .post2-lbl,
+  .emerg-name-lbl,
+  .emerg-relation-lbl,
+  .emerg-tel-lbl,
+  .family-name-lbl,
+  .family-relation-lbl,
+  .family-tel-lbl,
+  .family-age-lbl {
+    padding: 0 5px;
+    text-align: center;
+    margin-top: 10px;
+    float: left;
+    width: 80px;
+    font-size: 9pt;
+  }
+
+  .id-lbl,
+  .email-lbl,
+  .cellph-lbl,
+  .edu-lbl,
+  .social-lbl {
+    width: 100px;
+  }
+
+  input {
+    font-size: 8pt;
+  }
+
+  .sex-m-lbl,
+  .sex-f-lbl {
+    border: none;
+    padding: 0 5px;
+    font-size: 9pt;
+  }
+  .btn-section {
+    margin-left: 50px;
+  }
+  button {
+    padding: 8px 15px;
+    margin-right: 10px;
+    font-size: 8pt;
+    letter-spacing: 1px;
+  }
+
+  footer {
+    margin: 20px 0 0 10px;
+  }
+  .signature {
+    font-weight: normal;
+    padding-bottom: 10px;
+    font-size: 9pt;
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 1209px) {
   .main-header {
     height: 35px;
     font-size: 7pt;
@@ -391,14 +592,14 @@ input[type="email"]:not(:placeholder-shown):not(:focus):invalid {
   .row-11 {
     display: flex;
     flex-direction: column;
-    height: 100px;
+    height: 130px;
     width: 100%;
     border-right: solid black 2px;
   }
 
   .row-1,
   .row-2 {
-    height: 170px;
+    height: 180px;
   }
   .row-7 {
     border-top: black solid 2px;
@@ -410,9 +611,11 @@ input[type="email"]:not(:placeholder-shown):not(:focus):invalid {
   .row-9 {
     height: 40px;
   }
-
+  .row-10 {
+    height: 180px;
+  }
   .row-11 {
-    height: 200px;
+    height: 235px;
   }
 
   .dob-field {
@@ -488,6 +691,12 @@ input[type="email"]:not(:placeholder-shown):not(:focus):invalid {
     margin-top: 10px;
     float: left;
     width: 200px;
+  }
+
+  button {
+    padding: 8px 15px;
+    font-size: 10pt;
+    letter-spacing: 1px;
   }
 }
 
@@ -567,7 +776,7 @@ input[type="email"]:not(:placeholder-shown):not(:focus):invalid {
   }
 }
 
-@media only screen and (min-width: 1408px) and (max-width: 1550px) {
+@media only screen and (min-width: 1408px) and (max-width: 1670px) {
   .main-header {
     height: 50px;
   }
