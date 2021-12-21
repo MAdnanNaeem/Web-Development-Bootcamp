@@ -32,11 +32,12 @@
 
                             <div class="urdu-name-sec">
                                 <label class="u-n-lbl" for="u-n">Name in Urdu</label>
-                                <input class="u-n-field" type="text" name="Urdu-Name" id="u-n" placeholder="Enter name in Urdu">
+                                <input class="u-n-field" type="text" name="Urdu-Name" id="u-n" placeholder="Enter name in Urdu" onkeypress=" return alphaOnly(event );"  >
+                                <!-- onkeypress=" return alphaOnly(event );" -->
                             </div>
                             <div class="english-name-sec">
                                 <label class="e-n-lbl" for="e-n">Name in English</label>
-                                <input class="e-n-field" type="text" name="English-Name" id="e-n" placeholder="Enter name in English" >
+                                <input class="e-n-field" type="text" name="English-Name" id="e-n" placeholder="Enter name in English" onkeypress=" return alphaOnly(event );">
                             </div>
                             <div class="sex-sec">
                                 <div class="sex-sub-sec">
@@ -54,7 +55,7 @@
 
                             <div class="blood-type-sec">
                                 <label class="b-t-lbl" for="b-t">Blood Type</label>
-                                <input class="b-t-field" type="text" name="Blood-Type" id="b-t" placeholder="Enter blood type">
+                                <input class="b-t-field" type="text" name="Blood-Type" id="b-t" placeholder="Enter blood type" onkeypress="return alpha_positive_negative(event);">
                             </div>
                             <div class="dob-sec">
                                 <label class="dob-lbl" for="dob">Date of Birth</label>
@@ -62,7 +63,7 @@
                             </div>
                             <div class="height-sec">
                                 <label class="height-lbl" for="height">Height</label>
-                                <input class="height-field" type="number" placeholder="Enter height in cm" name="height" id="height">
+                                <input class="height-field" type="number" placeholder="Enter height in cm" name="height" id="height" onkeypress=" return validate_hg_wg(event);">
                             </div>
                         </div>
 
@@ -70,11 +71,13 @@
 
                             <div class="ID-sec">
                                 <label class="id-lbl" for="id">ID Card Number</label>
-                                <input class="id-field" type="text" name="ID-card-no" id="id" placeholder="Enter CNIC Number" >
+                                <input class="id-field" type="text" name="ID-card-no" id="id" placeholder="Enter CNIC Number" 
+                                onkeypress="return valid_idcard(event);">
                             </div>
                             <div class="weight-sec">
                                 <label class="weight-lbl" for="weight">Weight</label>
-                                <input class="weight-field" type="number" placeholder="Enter weight in kg" name="weight" id="weight">
+                                <input class="weight-field" type="number" placeholder="Enter weight in kg" name="weight" id="weight"
+                                onkeypress=" return validate_hg_wg(event);">
                             </div>
                         </div>
 

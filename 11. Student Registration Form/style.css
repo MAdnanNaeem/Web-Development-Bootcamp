@@ -503,11 +503,15 @@ input[type="email"]:not(:placeholder-shown):not(:focus):invalid {
     font-size: 9pt;
   }
 
-  .id-lbl,
+  .id-lbl {
+    width: 80px;
+  }
   .email-lbl,
   .cellph-lbl,
   .edu-lbl,
-  .social-lbl {
+  .social-lbl,
+  .subj-lbl,
+  .highest-lbl {
     width: 100px;
   }
 
