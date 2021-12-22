@@ -704,7 +704,7 @@ input[type="email"]:not(:placeholder-shown):not(:focus):invalid {
   }
 }
 
-@media only screen and (min-width: 1210px) and (max-width: 1408px) {
+@media only screen and (min-width: 1210px) and (max-width: 1510px) {
   .main-header {
     height: 45px;
     font-size: 10pt;
@@ -780,7 +780,7 @@ input[type="email"]:not(:placeholder-shown):not(:focus):invalid {
   }
 }
 
-@media only screen and (min-width: 1408px) and (max-width: 1670px) {
+@media only screen and (min-width: 1510px) and (max-width: 1670px) {
   .main-header {
     height: 50px;
   }

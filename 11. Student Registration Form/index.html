@@ -5,7 +5,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
     <link rel="stylesheet" href="style.css" />
+   
     <title>Student Registration Form</title>
 </head>
 
@@ -55,7 +57,7 @@
 
                             <div class="blood-type-sec">
                                 <label class="b-t-lbl" for="b-t">Blood Type</label>
-                                <input class="b-t-field" type="text" name="Blood-Type" id="b-t" placeholder="Enter blood type" onkeypress="return alpha_positive_negative(event);">
+                                <input class="b-t-field" type="text" name="Blood-Type" id="b-t" minlength="2" maxlength="3" placeholder="Enter blood type"    onkeypress="return alpha_positive_negative(event);">
                             </div>
                             <div class="dob-sec">
                                 <label class="dob-lbl" for="dob">Date of Birth</label>
@@ -63,7 +65,7 @@
                             </div>
                             <div class="height-sec">
                                 <label class="height-lbl" for="height">Height</label>
-                                <input class="height-field" type="number" placeholder="Enter height in cm" name="height" id="height" onkeypress=" return validate_hg_wg(event);">
+                                <input class="height-field" type="text" minlength="2" maxlength="5" placeholder="Enter height in cm" name="height" id="height" onkeypress=" return validate_hg_wg(event);">
                             </div>
                         </div>
 
@@ -71,12 +73,12 @@
 
                             <div class="ID-sec">
                                 <label class="id-lbl" for="id">ID Card Number</label>
-                                <input class="id-field" type="text" name="ID-card-no" id="id" placeholder="Enter CNIC Number" 
+                                <input class="id-field" type="text" name="ID-card-no" id="id" placeholder="Enter CNIC Number" minlength="13" maxlength="13"
                                 onkeypress="return valid_idcard(event);">
                             </div>
                             <div class="weight-sec">
                                 <label class="weight-lbl" for="weight">Weight</label>
-                                <input class="weight-field" type="number" placeholder="Enter weight in kg" name="weight" id="weight"
+                                <input class="weight-field" type="text" minlength="2" maxlength="5"  placeholder="Enter weight in kg" name="weight" id="weight"
                                 onkeypress=" return validate_hg_wg(event);">
                             </div>
                         </div>
@@ -89,7 +91,8 @@
                     </div>
                     <div class="cellph-sec ">
                         <label class="cellph-lbl " for="cellph ">Mobile Phone</label>
-                        <input class="cellph-field " type="tel " placeholder="Enter weight in Kg " name="cellph " id="cellph " >
+                        <input class="cellph-field " type="tel " placeholder="Enter Phone Number" name="cellph " minlength="11" maxlength="13"  id="cellph "
+                        onkeypress="return validate_phno(event);" >
                     </div>
                 </div>
 
@@ -97,11 +100,11 @@
 
                     <div class="edu-sec ">
                         <label class=edu-lbl " for="edu ">Qualification</label>
-                                <input class="edu-field " type="text " name="Education " id="edu " placeholder="Enter your education" >
+                                <input class="edu-field " type="text " name="Education " id="edu " placeholder="Enter your education" onkeypress="return validation_Edu_addr(event);" >
                             </div>
                             <div class="social-sec ">
                                 <label class="social-lbl " for="social ">QQ / MSN</label>
-                                <input class="social-field " type="text " placeholder="Enter your social ID " name="social-ID " id="social">
+                                <input class="social-field " type="text " placeholder="Enter your social ID " name="social-ID " id="social" onkeypress="return alphaOnly(event);">
                             </div>
                         </div>
 
@@ -109,11 +112,11 @@
 
                             <div class="subj-sec">
                                 <label class=subj-lbl " for="subj ">Major Subject</label>
-                        <input class="subj-field " type="text " name="Major-Subject " id="subj " placeholder="Enter major subjects " >
+                        <input class="subj-field " type="text " name="Major-Subject " id="subj " placeholder="Enter major subjects "  onkeypress="return validation_Edu_addr(event);">
                     </div>
                     <div class="highest-sec ">
                         <label class="highest-lbl " for="highest ">Highest Level</label>
-                        <input class="highest-field " type="text " placeholder="Enter highest level " name="highest " id="highest ">
+                        <input class="highest-field " type="text " placeholder="Enter highest level " name="highest " id="highest "  onkeypress="return alphaOnly(event);">
                     </div>
                 </div>
 
@@ -129,11 +132,11 @@
 
                     <div class="addr-sec ">
                         <label class="addr-lbl " for="addr ">Residence Address</label>
-                        <input class="addr-field " type="text " name="Residence-Address " id="addr " placeholder="Enter residence address ">
+                        <input class="addr-field " type="text " name="Residence-Address " id="addr " placeholder="Enter residence address "  onkeypress="return validation_Edu_addr(event);">
                     </div>
                     <div class="post-sec ">
                         <label class="post-lbl " for="post ">Postal Code</label>
-                        <input class="post-field " type="number "  name="Postal-Code " id="post " placeholder="Enter postal code ">
+                        <input class="post-field " type="number "  name="Postal-Code " id="post " placeholder="Enter postal code " onkeypress="return validate_numb(event);" minlength="5" maxlength="6">
                     </div>
                 </div>
 
@@ -141,11 +144,11 @@
 
                     <div class="pres-addr-sec ">
                         <label class="pres-addr-lbl " for="pres-addr ">Present Address</label>
-                        <input class="pres-addr-field " type="text " name="Present-Address " id="pres-addr " placeholder="Enter present address " >
+                        <input class="pres-addr-field " type="text " name="Present-Address " id="pres-addr " placeholder="Enter present address " onkeypress="return validation_Edu_addr(event);">
                     </div>
                     <div class="post2-sec ">
                         <label class="post2-lbl " for="post2 ">Postal Code</label>
-                        <input class="post2-field " type="number "  name="Postal-Code " id="post2 " placeholder="Enter postal code ">
+                        <input class="post2-field " type="number "  name="Postal-Code " id="post2 " placeholder="Enter postal code " onkeypress="return validate_numb(event);" minlength="5" maxlength="6">
                     </div>
                 </div>
                 <div class="row-9 ">
@@ -156,15 +159,15 @@
 
                     <div class="emerg-name-sec ">
                         <label class="emerg-name-lbl " for="emerg-name ">Name</label>
-                        <input class="emerg-name-field " type="text " name="Emergency-Name " id="emerg-name " placeholder="Enter name " >
+                        <input class="emerg-name-field " type="text " name="Emergency-Name " id="emerg-name " placeholder="Enter name " onkeypress="return alphaOnly(event);" >
                     </div>
                     <div class="emerg-relation-sec ">
                         <label class="emerg-relation-lbl " for="emerg-relation ">Relationship</label>
-                        <input class="emerg-relation-field " type="text " name="Emergency-Relationship " id="emerg-relation " placeholder="Enter relationship " >
+                        <input class="emerg-relation-field " type="text " name="Emergency-Relationship " id="emerg-relation " placeholder="Enter relationship " onkeypress="return alphaOnly(event);">
                     </div>
                     <div class="emerg-tel-sec ">
                         <label class="emerg-tel-lbl " for="emerg-tel ">Telephone</label>
-                        <input class="emerg-tel-field " type="tel " placeholder="Enter phone number " name="emerg-tel " id="emerg-tel "  >
+                        <input class="emerg-tel-field " type="tel " placeholder="Enter phone number " name="emerg-tel " id="emerg-tel " onkeypress="return validate_phno(event);"  minlength="11" maxlength="13">
                     </div>
                 </div>
             </div>
@@ -178,20 +181,20 @@
 
                     <div class="family-name-sec ">
                         <label class="family-name-lbl " for="family-name ">Name</label>
-                        <input class="family-name-field " type="text " name="Family-Name " id="family-name " placeholder="Enter name ">
+                        <input class="family-name-field " type="text " name="Family-Name " id="family-name " placeholder="Enter name " onkeypress="return alphaOnly(event);">
                     </div>
                     
                     <div class="family-relation-sec ">
                         <label class="family-relation-lbl " for="family-relation ">Relationship</label>
-                        <input class="family-relation-field " type="text " name=" Family-Relationship " id="family-relation " placeholder="Enter relationship ">
+                        <input class="family-relation-field " type="text " name=" Family-Relationship " id="family-relation " placeholder="Enter relationship " onkeypress="return alphaOnly(event);">
                     </div>
                     <div class="family-tel-sec ">
                         <label class="family-tel-lbl " for="family-tel ">Telephone</label>
-                        <input class="family-tel-field " type="tel " placeholder="Enter phone number " name="family-tel " id="family-tel ">
+                        <input class="family-tel-field " type="tel " placeholder="Enter phone number " name="family-tel " id="family-tel " onkeypress="return validate_phno(event);" minlength="11" maxlength="13">
                     </div>
                     <div class="family-age-sec ">
                         <label class="family-age-lbl " for="family-age ">Age</label>
-                        <input class="family-age-field " type="number " name="family-age " id="family-age " placeholder="Enter age ">
+                        <input class="family-age-field " type="number " name="family-age " id="family-age " placeholder="Enter age " onkeypress="return validate_numb(event);" minlength="1" maxlength="3">
                     </div>
                 </div>
             </div>
