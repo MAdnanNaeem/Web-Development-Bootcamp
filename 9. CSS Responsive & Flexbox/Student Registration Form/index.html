@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,9 +9,19 @@
 
     <!-- Links External -->
 
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
-    <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+    ></script>
+    <script
+      src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js"
+      type="text/javascript"
+    ></script>
+    <link
+      href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- <style>
       .lbl {
         font-size: 15px;
@@ -24,48 +33,57 @@
     </style> -->
 
     <title>Assignment 1</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <section class="parentContainer">
-        <section class="navSec">
-            <nav>
-                <h2>Students</h2>
-                <li><a href="admissionSearch.html">Admission Search</a></li>
-                <li><a href="index.html">Registration</a></li>
-                <li><a href="searchRegistration.html">Search Registration</a></li>
-                <li><a href="basicRegistartion.html">Basic Information</a></li>
-                <li><a href="fine.html">Fine</a></li>
-                <li><a href="quickView.html">Quick View</a></li>
-                <li><a href="transfer.html">Withdrawal</a></li>
-                <li><a href="concessionList.html">Concession List</a></li>
-            </nav>
+      <section class="navSec">
+        <nav>
+          <h2>Students</h2>
+          <li><a href="admissionSearch.html">Admission Search</a></li>
+          <li><a href="index.html">Registration</a></li>
+          <li><a href="searchRegistration.html">Search Registration</a></li>
+          <li><a href="basicRegistartion.html">Basic Information</a></li>
+          <li><a href="fine.html">Fine</a></li>
+          <li><a href="quickView.html">Quick View</a></li>
+          <li><a href="transfer.html">Withdrawal</a></li>
+          <li><a href="concessionList.html">Concession List</a></li>
+        </nav>
+      </section>
+
+      <main>
+        <section class="topSection">
+          <h1>
+            Dashboard
+            <div class="watch" style="text-align: center">
+              <h4>
+                <a
+                  style="text-decoration: none"
+                  href="https://www.zeitverschiebung.net/en/country/pk"
+                ></a>
+              </h4>
+              <iframe
+                src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Asia%2FKarachi&show=hour_minute"
+                width="100%"
+                height="90"
+                frameborder="0"
+                seamless
+              ></iframe>
+            </div>
+            <!-- <span id="date"></span> <br />
+            <span id="time"></span> -->
+          </h1>
+
+          <h2>Student Registration</h2>
+
+          <hr />
         </section>
 
-        <main>
-            <section class="topSection">
-                <h1>
-                    Dashboard
-                    <div class="watch" style="text-align: center">
-                        <h4>
-                            <a style="text-decoration: none" href="https://www.zeitverschiebung.net/en/country/pk"></a>
-                        </h4>
-                        <iframe src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=small&timezone=Asia%2FKarachi&show=hour_minute" width="100%" height="90" frameborder="0" seamless></iframe>
-                    </div>
-                    <!-- <span id="date"></span> <br />
-            <span id="time"></span> -->
-                </h1>
-
-                <h2>Student Registration</h2>
-
-                <hr />
-            </section>
-
-            <section class="formSection">
-                <form action="">
-                    <div class="form1">
-                        <label class="labels" for="campus">Campus</label>
-                        <select class="inputs" name="School" id="campus">
+        <section class="formSection">
+          <form action="">
+            <div class="form1">
+              <label class="labels" for="campus">Campus</label>
+              <select class="inputs" name="School" id="campus">
                 <option value="Arham School System">Arham School System</option>
                 <option value="Hazara School System">
                   Hazara School System
@@ -93,9 +111,10 @@
                   Concordia School System
                 </option>
               </select>
-                        <br />
+              <br />
 
-                        <label class="labels" for="Regdate">Registration Date <span id="ast">&ast;</span></label
+              <label class="labels" for="Regdate"
+                >Registration Date <span id="ast">&ast;</span></label
               >
               <input
                 class="inputs"
@@ -108,10 +127,18 @@
               <br />
 
               <label class="labels" for="regId">Registration ID</label>
-                        <input class="inputs" type="number" name="RegistrationID" id="regId" max="9999999" min="0" />
-                        <br />
+              <input
+                class="inputs"
+                type="number"
+                name="RegistrationID"
+                id="regId"
+                max="9999999"
+                min="0"
+              />
+              <br />
 
-                        <label class="labels" for="fname">First Name <span id="ast">&ast;</span></label
+              <label class="labels" for="fname"
+                >First Name <span id="ast">&ast;</span></label
               >
               <input
                 class="inputs"
@@ -123,9 +150,16 @@
               required /><br />
 
               <label class="labels" for="mname">Middle Name</label>
-                        <input class="inputs" id="mname" type="text" name="middleName" onkeypress=" return alphaOnly(event );" /><br />
+              <input
+                class="inputs"
+                id="mname"
+                type="text"
+                name="middleName"
+                onkeypress=" return alphaOnly(event );"
+              /><br />
 
-                        <label class="labels" for="lname">Last Name <span id="ast">&ast;</span></label
+              <label class="labels" for="lname"
+                >Last Name <span id="ast">&ast;</span></label
               >
               <input
                 class="inputs"
@@ -161,9 +195,15 @@
               /><br />
 
               <label class="labels" for="pob">Place of Birth</label>
-                        <input class="inputs" id="pob" type="text" name="placeOfBirth" /><br />
+              <input
+                class="inputs"
+                id="pob"
+                type="text"
+                name="placeOfBirth"
+              /><br />
 
-                        <label class="labels" for="address">Address <span id="ast">&ast;</span></label
+              <label class="labels" for="address"
+                >Address <span id="ast">&ast;</span></label
               >
               <textarea
                 class="inputs"
@@ -178,16 +218,17 @@
                 <input id="a" type="checkbox" value="active" name="status" />
                 <label for="a">Active</label>
 
-                        <input id="b" type="checkbox" name="status" value="admitted" />
-                        <label for="b">Admitted</label>
+                <input id="b" type="checkbox" name="status" value="admitted" />
+                <label for="b">Admitted</label>
 
-                        <input id="c" type="checkbox" name="status" value="transfer" />
-                        <label for="c">Transfer</label>
-                    </div>
-                    </div>
+                <input id="c" type="checkbox" name="status" value="transfer" />
+                <label for="c">Transfer</label>
+              </div>
+            </div>
 
-                    <div class="form2">
-                        <label class="labels" for="resNo">Residence Number <span id="ast">&ast;</span></label
+            <div class="form2">
+              <label class="labels" for="resNo"
+                >Residence Number <span id="ast">&ast;</span></label
               >
               <input
                 class="inputs"
@@ -237,30 +278,37 @@
               />
 
               <label class="labels" for="prevSchool">Previous School</label>
-                        <input class="inputs" type="text" name="prevSchool" id="prevSchool" onkeypress=" return alphaOnly(event );" />
-                        <br />
+              <input
+                class="inputs"
+                type="text"
+                name="prevSchool"
+                id="prevSchool"
+                onkeypress=" return alphaOnly(event );"
+              />
+              <br />
 
-                        <label class="labels" for="nat">Nationality</label>
-                        <select class="inputs" name="Nationality" id="nat">
+              <label class="labels" for="nat">Nationality</label>
+              <select class="inputs" name="Nationality" id="nat">
                 <option value="Pakistani">Pakistani</option>
                 <option value="Qatari">Qatari</option>
                 <option value="American">American</option>
                 <option value="Austrailan">Austrailan</option>
                 <option value="Srilankan">Srilankan</option>
               </select>
-                        <br />
+              <br />
 
-                        <label class="labels" for="religion">Religion</label>
-                        <select class="inputs" name="religion" id="religion">
+              <label class="labels" for="religion">Religion</label>
+              <select class="inputs" name="religion" id="religion">
                 <option value="Islam">Islam</option>
                 <option value="Sikh">Sikh</option>
                 <option value="Hindu">Hindu</option>
                 <option value="Budhmat">Budhmat</option>
                 <option value="Jewish">Jewish</option>
               </select>
-                        <br />
+              <br />
 
-                        <label class="labels" for="gender">Gender <span id="ast">&ast;</span></label
+              <label class="labels" for="gender"
+                >Gender <span id="ast">&ast;</span></label
               >
               <select class="inputs" name="gender" id="gender" required>
                 <option value="Male">Male</option>
@@ -326,159 +374,162 @@
     <div id="dialog" style="display: none">
       <div class="labels2">
         <label>First Name : </label> <br />
-                        <label>Middle Name : </label> <br />
-                        <label>Last Name : </label> <br />
-                        <label>Father Name :</label> <br />
-                        <label>Date of Birth :</label> <br />
-                        <label>Gender :</label> <br />
-                        <label>Place of Birth :</label> <br />
-                        <label>Address :</label> <br />
-                        <label>Residence Number :</label> <br />
-                        <label>Mobile Number :</label> <br />
-                        <label>Emergency No :</label> <br />
-                        <label>Email :</label> <br />
-                        <label>Campus :</label> <br />
-                        <label>Registration Date :</label> <br />
-                        <label>Registration ID :</label> <br />
-                        <label>Class :</label> <br />
-                        <label>Session :</label> <br />
-                        <label>Previous School :</label> <br />
-                        <label>Nationality :</label> <br />
-                        <label>Religion :</label> <br />
-                    </div>
+        <label>Middle Name : </label> <br />
+        <label>Last Name : </label> <br />
+        <label>Father Name :</label> <br />
+        <label>Date of Birth :</label> <br />
+        <label>Gender :</label> <br />
+        <label>Place of Birth :</label> <br />
+        <label>Address :</label> <br />
+        <label>Residence Number :</label> <br />
+        <label>Mobile Number :</label> <br />
+        <label>Emergency No :</label> <br />
+        <label>Email :</label> <br />
+        <label>Campus :</label> <br />
+        <label>Registration Date :</label> <br />
+        <label>Registration ID :</label> <br />
+        <label>Class :</label> <br />
+        <label>Session :</label> <br />
+        <label>Previous School :</label> <br />
+        <label>Nationality :</label> <br />
+        <label>Religion :</label> <br />
+      </div>
 
-                    <div class="spans1">
-                        <span id="show_fname"></span><br />
-                        <span id="show_mname"></span> <br />
-                        <span id="show_lname"></span><br />
-                        <span id="show_ftname"></span> <br />
-                        <span id="show_dob"></span><br />
-                        <span id="show_gender"></span><br />
-                        <span id="show_pob"></span> <br />
-                        <span id="show_addre"></span><br />
-                        <span id="show_resNo"></span> <br />
-                        <span id="show_phno"></span><br />
-                        <span id="show_eno"></span><br />
-                        <span id="show_email"></span> <br />
-                        <span id="show_campus"></span><br />
-                        <span id="show_regdate"></span><br />
-                        <span id="show_regid"> </span> <br />
-                        <span id="show_clas"></span> <br />
-                        <span id="show_session"></span><br />
-                        <span id="show_presch"></span><br />
-                        <span id="show_nat"></span><br />
-                        <span id="show_religion"></span>
-                        <button class="btnPrint" type="submit" onclick="dialogClose()">
+      <div class="spans1">
+        <span id="show_fname"></span><br />
+        <span id="show_mname"></span> <br />
+        <span id="show_lname"></span><br />
+        <span id="show_ftname"></span> <br />
+        <span id="show_dob"></span><br />
+        <span id="show_gender"></span><br />
+        <span id="show_pob"></span> <br />
+        <span id="show_addre"></span><br />
+        <span id="show_resNo"></span> <br />
+        <span id="show_phno"></span><br />
+        <span id="show_eno"></span><br />
+        <span id="show_email"></span> <br />
+        <span id="show_campus"></span><br />
+        <span id="show_regdate"></span><br />
+        <span id="show_regid"> </span> <br />
+        <span id="show_clas"></span> <br />
+        <span id="show_session"></span><br />
+        <span id="show_presch"></span><br />
+        <span id="show_nat"></span><br />
+        <span id="show_religion"></span>
+        <button class="btnPrint" type="submit" onclick="dialogClose()">
           Print
         </button>
-                    </div>
-                    </div>
-                    <footer><small class="signature">&copy; M ADNAN NAEEM</small></footer>
+      </div>
+    </div>
+    <footer><small class="signature">&copy; M ADNAN NAEEM</small></footer>
 
-                    <script>
-                        function disable() {
-                            if (document.getElementById("regId").value.length != 0) {
-                                document.getElementById("Save").setAttribute("disabled", "disabled");
-                                document.getElementById("regId").setAttribute("disabled", "disabled");
-                            }
-                        }
+    <!-- ** JavaScript is Starting from Here -->
 
-                        function enable() {
-                            document.getElementById("Save").removeAttribute("disabled");
-                            document.getElementById("regId").removeAttribute("disabled");
-                        }
+    <script>
+      function disable() {
+        if (document.getElementById("regId").value.length != 0) {
+          document.getElementById("Save").setAttribute("disabled", "disabled");
+          document.getElementById("regId").setAttribute("disabled", "disabled");
+        }
+      }
 
-                        function dialogClose() {
-                            var dia = document.getElementById("dialog");
-                            $("#dialog").dialog("close");
-                            window.print();
-                        }
+      function enable() {
+        document.getElementById("Save").removeAttribute("disabled");
+        document.getElementById("regId").removeAttribute("disabled");
+      }
 
-                        $(function() {
-                            $("#dialog").dialog({
-                                modal: true,
-                                autoOpen: false,
-                                title: "Student Details",
-                                width: 600,
-                                height: 750,
-                            });
-                            $("#showdata").click(function(e) {
-                                e.preventDefault();
-                                var fname = $("#fname").val(); //a
-                                var mname = $("#mname").val(); //a
-                                var lname = $("#lname").val(); //a
-                                var ftname = $("#ftname").val(); //a
-                                var dob = $("#dob").val(); //a
-                                var gender = $("#gender").val(); //a
-                                var birthloc = $("#pob").val(); //a
-                                var address = $("#address").val(); //a
-                                var resi_no = $("#resNo").val(); //a
-                                var phno = $("#phno").val(); //a
-                                var emergencyNo = $("#emerg").val(); //a
-                                var email = $("#email").val(); //a
-                                var campus = $("#campus").val(); //a
-                                var regdate = $("#Regdate").val(); //a
-                                var regid = $("#regId").val(); //a
-                                var clas = $("#admissionClass").val(); //a
-                                var session = $("#admission").val(); //a
-                                var prev_school = $("#prevSchool").val(); //a
-                                var Nationality = $("#nat").val();
-                                var religion = $("#religion").val(); //a
+      function dialogClose() {
+        var dia = document.getElementById("dialog");
+        $("#dialog").dialog("close");
+        window.print();
+      }
 
-                                $("#show_fname").html(fname);
-                                $("#show_mname").html(mname);
-                                $("#show_lname").html(lname);
-                                $("#show_ftname").html(ftname);
-                                $("#show_dob").html(dob);
-                                $("#show_gender").html(gender);
-                                $("#show_pob").html(birthloc);
-                                $("#show_addre").html(address);
-                                $("#show_resNo").html(resi_no);
-                                $("#show_phno").html(phno);
-                                $("#show_eno").html(emergencyNo);
-                                $("#show_email").html(email);
-                                $("#show_campus").html(campus);
-                                $("#show_regdate").html(regdate);
-                                $("#show_regid").html(regid);
-                                $("#show_clas").html(clas);
-                                $("#show_session").html(session);
-                                $("#show_presch").html(prev_school);
-                                $("#show_nat").html(Nationality);
-                                $("#show_religion").html(religion);
+      $(function () {
+        $("#dialog").dialog({
+          modal: true,
+          autoOpen: false,
+          title: "Student Details",
+          width: 600,
+          height: 750,
+        });
+        $("#showdata").click(function (e) {
+          e.preventDefault();
+          var fname = $("#fname").val(); //a
+          var mname = $("#mname").val(); //a
+          var lname = $("#lname").val(); //a
+          var ftname = $("#ftname").val(); //a
+          var dob = $("#dob").val(); //a
+          var gender = $("#gender").val(); //a
+          var birthloc = $("#pob").val(); //a
+          var address = $("#address").val(); //a
+          var resi_no = $("#resNo").val(); //a
+          var phno = $("#phno").val(); //a
+          var emergencyNo = $("#emerg").val(); //a
+          var email = $("#email").val(); //a
+          var campus = $("#campus").val(); //a
+          var regdate = $("#Regdate").val(); //a
+          var regid = $("#regId").val(); //a
+          var clas = $("#admissionClass").val(); //a
+          var session = $("#admission").val(); //a
+          var prev_school = $("#prevSchool").val(); //a
+          var Nationality = $("#nat").val();
+          var religion = $("#religion").val(); //a
 
-                                $("#dialog").dialog("open");
+          $("#show_fname").html(fname);
+          $("#show_mname").html(mname);
+          $("#show_lname").html(lname);
+          $("#show_ftname").html(ftname);
+          $("#show_dob").html(dob);
+          $("#show_gender").html(gender);
+          $("#show_pob").html(birthloc);
+          $("#show_addre").html(address);
+          $("#show_resNo").html(resi_no);
+          $("#show_phno").html(phno);
+          $("#show_eno").html(emergencyNo);
+          $("#show_email").html(email);
+          $("#show_campus").html(campus);
+          $("#show_regdate").html(regdate);
+          $("#show_regid").html(regid);
+          $("#show_clas").html(clas);
+          $("#show_session").html(session);
+          $("#show_presch").html(prev_school);
+          $("#show_nat").html(Nationality);
+          $("#show_religion").html(religion);
 
-                                setTimeout(function() {
-                                    $("#example").submit();
-                                }, 3000);
-                            });
-                        });
+          $("#dialog").dialog("open");
 
-                        // var d = new Date();
-                        // document.getElementById("dateTime").innerHTML = d.toLocaleDateString();
-                        // document.write("<br>");
-                        // document.getElementById("dateTime").innerHTML = d.toLocaleDateString();
-                        function alphaOnly(event) {
-                            return (
-                                (event.charCode >= 65 && event.charCode <= 90) ||
-                                (event.charCode >= 97 && event.charCode <= 122) ||
-                                event.charCode == 32
-                            );
-                        }
+          setTimeout(function () {
+            $("#example").submit();
+          }, 3000);
+        });
+      });
 
-                        var today = new Date();
-                        var date =
-                            today.getDate() +
-                            " " +
-                            (today.getMonth() + 1) +
-                            " " +
-                            today.getFullYear();
-                        document.getElementById("date").innerHTML = date;
+      // var d = new Date();
+      // document.getElementById("dateTime").innerHTML = d.toLocaleDateString();
+      // document.write("<br>");
+      // document.getElementById("dateTime").innerHTML = d.toLocaleDateString();
+      function alphaOnly(event) {
+        return (
+          (event.charCode >= 65 && event.charCode <= 90) ||
+          (event.charCode >= 97 && event.charCode <= 122) ||
+          event.charCode == 32
+        );
+      }
 
-                        var time =
-                            today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-                        document.getElementById("time").innerHTML = time;
-                    </script>
-</body>
+      //! Date Code
 
+      var today = new Date();
+      var date =
+        today.getDate() +
+        " " +
+        (today.getMonth() + 1) +
+        " " +
+        today.getFullYear();
+      document.getElementById("date").innerHTML = date;
+
+      var time =
+        today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+      document.getElementById("time").innerHTML = time;
+    </script>
+  </body>
 </html>
